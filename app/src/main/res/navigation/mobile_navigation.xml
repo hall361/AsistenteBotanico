@@ -18,8 +18,14 @@
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_tutorial"
         android:name="com.poli.botanicalassistant.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/menu_tutorials"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_blogs"
+        android:name="com.poli.botanicalassistant.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_blogs"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>
