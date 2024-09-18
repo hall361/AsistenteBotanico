@@ -27,10 +27,25 @@ class WebNavigatorFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        observeUrl()
+        configButtonListener()
+        configWebView()
+    }
+
+    private fun configWebView() {
+        binding.webview.apply {
+            settings.javaScriptEnabled = true
+            this.webViewClient = WebViewClient()
+        }
+    }
+
+    private fun observeUrl() {
         viewModel.url.observe(viewLifecycleOwner) {
             loadUrlInWebView(it)
         }
+    }
 
+    private fun configButtonListener() {
         binding.buttonLoadUrl.setOnClickListener {
             val input = binding.editTextUrl.text.toString()
             if (input.isNotEmpty()) {
@@ -38,11 +53,6 @@ class WebNavigatorFragment : Fragment() {
             } else {
                 Toast.makeText(requireContext(), "Please enter a valid URL", Toast.LENGTH_SHORT).show()
             }
-        }
-
-        binding.webview.apply {
-            settings.javaScriptEnabled = true
-            this.webViewClient = WebViewClient()
         }
     }
 
