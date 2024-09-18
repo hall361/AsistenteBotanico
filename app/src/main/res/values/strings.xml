@@ -11,5 +11,8 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_tutorials">Tutorials</string>
-    <string name="menu_blogs">Blogs</string>
+    <string name="menu_web">Web</string>
+    <string name="blog_image_preview">Blog image content description</string>
+    <string name="lab_input_url">URL</string>
+    <string name="action_load">Load</string>
 </resources>

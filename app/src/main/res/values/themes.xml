@@ -16,6 +16,9 @@
         <!-- Colors to menu navigation -->
         <item name="colorControlNormal">@color/primary_color</item>
         <item name="colorControlActivated">@color/primary_color</item>
+
+        <item name="colorOnBackground">@color/color_on_background</item>
+        <item name="colorOnSurfaceVariant">@color/color_on_surface_variant</item>
     </style>
 
     <style name="Theme.BotanicalAssistant.NoActionBar">

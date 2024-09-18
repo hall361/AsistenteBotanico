@@ -18,8 +18,8 @@
             android:title="@string/menu_tutorials" />
 
         <item
-            android:id="@+id/nav_blogs"
-            android:icon="@drawable/ic_menu_article"
-            android:title="@string/menu_blogs" />
+            android:id="@+id/nav_web"
+            android:icon="@drawable/ic_menu_web"
+            android:title="@string/menu_web" />
     </group>
 </menu>
