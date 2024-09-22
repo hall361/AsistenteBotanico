@@ -8,11 +8,17 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
+    <string name="menu_garden">Garden</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_tutorials">Tutorials</string>
     <string name="menu_web">Web</string>
     <string name="blog_image_preview">Blog image content description</string>
     <string name="lab_input_url">URL</string>
     <string name="action_load">Load</string>
+    <string name="plant_image">Plant image description</string>
+    <string name="plant_classification">Plant classification</string>
+    <string name="plant_classification_indoor">Indoor</string>
+    <string name="plant_classification_outdoor">Outdoor</string>
+    <string name="plant_classification_succulent">Succulent</string>
+    <string name="plant_classification_other">Other</string>
 </resources>
