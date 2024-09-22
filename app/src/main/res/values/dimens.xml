@@ -10,11 +10,8 @@
     <dimen name="button_radius">8dp</dimen>
     <dimen name="item_horizontal_margin">16dp</dimen>
     <dimen name="item_vertical_margin">8dp</dimen>
-    <dimen name="item_title_size">16sp</dimen>
+    <dimen name="item_title_size">14sp</dimen>
     <dimen name="item_text_size">12sp</dimen>
-    <dimen name="item_image_width">60dp</dimen>
-    <dimen name="item_image_height">60dp</dimen>
-    <dimen name="item_small_image_width">24dp</dimen>
-    <dimen name="item_small_image_height">24dp</dimen>
-    <dimen name="item_elevation">4dp</dimen>
+    <dimen name="blog_image_width">60dp</dimen>
+    <dimen name="blog_image_height">60dp</dimen>
 </resources>

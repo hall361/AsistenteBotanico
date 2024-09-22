@@ -11,9 +11,9 @@
     <color name="background_color">#F5F5F5</color>
     <color name="on_background_color">#293829</color>
     <color name="surface_color">#FFFFFF</color>
-    <color name="on_surface_color">#000000</color>
+    <color name="on_surface_color">#293829</color>
     <color name="error_color">#B3261E</color>
     <color name="on_error_color">#FFFFFF</color>
     <color name="color_on_background">#293829</color>
-    <color name="color_on_surface_variant">#757575</color>
+    <color name="color_on_surface_variant">#4A5951</color>
 </resources>

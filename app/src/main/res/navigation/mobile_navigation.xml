@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_garden"
-        android:name="com.poli.botanicalassistant.ui.garden.GardenFragment"
-        android:label="@string/menu_garden"
-        tools:layout="@layout/fragment_garden" />
+        android:id="@+id/nav_gallery"
+        android:name="com.poli.botanicalassistant.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_tutorial"
