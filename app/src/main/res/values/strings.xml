@@ -16,4 +16,9 @@
     <string name="lab_input_url">URL</string>
     <string name="action_load">Load</string>
     <string name="plant_image">Plant image description</string>
+    <string name="plant_classification">Plant classification</string>
+    <string name="plant_classification_indoor">Indoor</string>
+    <string name="plant_classification_outdoor">Outdoor</string>
+    <string name="plant_classification_succulent">Succulent</string>
+    <string name="plant_classification_other">Other</string>
 </resources>

@@ -8,6 +8,7 @@ import com.bumptech.glide.request.RequestOptions
 import com.poli.botanicalassistant.R
 import com.poli.botanicalassistant.databinding.ItemPlantBinding
 import com.poli.botanicalassistant.domain.plant.Plant
+import com.poli.botanicalassistant.domain.plant.PlantType
 
 class PlantViewHolder(
     private val listener: OnPlantClickListener,
@@ -18,8 +19,9 @@ class PlantViewHolder(
         binding.plantCommonName.text = plant.commonName
         binding.plantClassification.text = plant.classification.name
         loadImage()
+        loadClassification(plant)
         configListeners(plant)
-        configOwnedIcon(plant)
+        configLoadOwnedIcon(plant)
     }
 
     private fun loadImage(
@@ -38,12 +40,27 @@ class PlantViewHolder(
         }
     }
 
-    private fun configOwnedIcon(plant: Plant) {
+    private fun configLoadOwnedIcon(plant: Plant) {
         if (plant.isOwned) {
             binding.ownedIcon.setImageResource(R.drawable.ic_favorite_selected)
         } else {
             binding.ownedIcon.setImageResource(R.drawable.ic_favorite_unselected)
         }
+    }
+
+    private fun loadClassification(plant: Plant) {
+        val plantClassification = when (plant.classification) {
+            PlantType.INDOOR -> R.string.plant_classification_indoor
+            PlantType.OUTDOOR -> R.string.plant_classification_outdoor
+            PlantType.SUCCULENT -> R.string.plant_classification_succulent
+            PlantType.OTHER -> R.string.plant_classification_other
+        }
+        val classificationText = "${getTextFromResource(R.string.plant_classification)}: ${getTextFromResource(plantClassification)}"
+        binding.plantClassification.text = classificationText
+    }
+
+    private fun getTextFromResource(resourceId: Int): String {
+        return binding.root.context.getString(resourceId)
     }
 
     companion object {
