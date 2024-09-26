@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation android:id="@+id/mobile_navigation"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
     app:startDestination="@+id/nav_home">
 
     <fragment
         android:id="@+id/nav_home"
         android:name="com.poli.botanicalassistant.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_video_player"
+            app:destination="@id/nav_video_player" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_garden"
@@ -22,6 +26,16 @@
         android:name="com.poli.botanicalassistant.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_tutorials"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_video_player"
+        android:name="com.poli.botanicalassistant.ui.video.VideoPlayerFragment"
+        android:label="@string/menu_tutorials"
+        tools:layout="@layout/fragment_slideshow">
+        <argument
+            android:name="videoId"
+            app:argType="string" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_web"
