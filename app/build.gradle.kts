@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.safeargs)
     kotlin("kapt")
 }
 
@@ -53,6 +54,7 @@ dependencies {
     implementation(libs.androidx.fragment.ktx)
     implementation(libs.glide)
     kapt(libs.glideCompiler)
+    implementation(libs.android.youtube.player)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
