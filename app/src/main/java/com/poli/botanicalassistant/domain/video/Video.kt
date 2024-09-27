@@ -13,7 +13,7 @@ import com.poli.botanicalassistant.domain.plant.PlantType
  * @property duration The Creation Date of the plant.
  * @property category The Category of the plant (Course, Info, etc.).
  * @property author The Author of the plant.
- * @property URL URL of the Videos.
+ * @property serverid of the Videos.
  */
 
 
@@ -24,6 +24,6 @@ data class Video(
     val duration: Int,
     val category: List<String>,
     val author: String,
-    val URL: String,
+    val serverid: String,
 
 )
