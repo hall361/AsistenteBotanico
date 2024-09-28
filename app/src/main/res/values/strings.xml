@@ -22,8 +22,13 @@
     <string name="plant_classification_succulent">Succulent</string>
     <string name="plant_classification_other">Other</string>
 
+    <string name="video_image">Video image description</string>  <!-- Descripción de la imagen del video -->
+    <string name="video_icon">Video icon</string>  <!-- Descripción accesible para el ícono de video -->
+
     <string name="video_player_error_generic_video">There seems to be an issue playing the video. Please try again.</string>
     <string name="video_player_error_video_not_found">The video you are trying to watch is not available. Please check the video ID.</string>
     <string name="video_player_error_video_not_playable">This video cannot be played in the app. Please try a different video.</string>
     <string name="video_player_error_unexpected">An unexpected error occurred while playing the video. Please try again later.</string>
+    <string name="menu_videos">Videos</string>  <!-- Agrega esta línea si no está presente -->
+
 </resources>

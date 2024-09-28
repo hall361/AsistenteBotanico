@@ -13,13 +13,13 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <VideoView
-            android:id="@+id/plant_image"
+        <ImageView
+            android:id="@+id/video_image"
             android:layout_width="@dimen/item_image_width"
             android:layout_height="@dimen/item_image_height"
             android:layout_marginStart="@dimen/default_margin"
             android:layout_marginVertical="@dimen/default_margin"
-            android:contentDescription="@string/plant_image"
+            android:contentDescription="@string/video_image"
             android:scaleType="centerCrop" />
 
         <LinearLayout
@@ -31,24 +31,36 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/plant_common_name"
+                android:id="@+id/video_name"
                 style="@style/TitleText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/plant_classification"
+                android:id="@+id/video_author"
+                style="@style/SecondaryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/video_creation_date"
+                style="@style/SecondaryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/video_duration"
                 style="@style/SecondaryText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
 
-        <VideoView
-            android:id="@+id/owned_icon"
+        <ImageView
+            android:id="@+id/video_icon"
             android:layout_width="@dimen/item_small_image_width"
             android:layout_height="@dimen/item_small_image_height"
             android:layout_marginEnd="@dimen/default_margin"
-            android:contentDescription="@string/plant_image"
-            android:src="@drawable/ic_favorite_unselected" />
+            android:contentDescription="@string/video_icon"
+            android:src="@drawable/ic_play" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

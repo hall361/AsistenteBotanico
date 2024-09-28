@@ -1,77 +1,38 @@
-package com.poli.botanicalassistant.ui.garden
+package com.poli.botanicalassistant.ui.videos
 
-import android.view.LayoutInflater
-import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
-import com.poli.botanicalassistant.R
 import com.poli.botanicalassistant.databinding.ItemVideoBinding
 import com.poli.botanicalassistant.domain.video.Video
-import com.poli.botanicalassistant.domain.video.VideoType
-import com.poli.botanicalassistant.ui.videos.OnVideoClickListener
 
+/**
+ * ViewHolder for displaying video items in a RecyclerView.
+ *
+ * @property binding ViewBinding for the video item layout.
+ * @property onVideoClickListener Lambda for handling video click events.
+ */
 class VideosViewHolder(
-    private val listener: OnVideoClickListener,
-    private val binding: ItemVideoBinding
+    private val binding: ItemVideoBinding,
+    private val onVideoClickListener: (Video) -> Unit // Cambiado a lambda
 ) : RecyclerView.ViewHolder(binding.root) {
 
+    /**
+     * Bind the video data to the views in the layout.
+     *
+     * @param video The video data to display.
+     */
     fun bind(video: Video) {
-        binding.plantCommonName.text = video.videoName
-        binding.plantClassification.text = plant.classification.name
-        loadImage()
-        loadClassification(plant)
-        configListeners(plant)
-        configLoadOwnedIcon(plant)
-    }
+        binding.videoName.text = video.videoName
+        binding.videoAuthor.text = video.author
 
-    private fun loadImage(
-        imageUrl: String = "https://sakder.com/wp-content/uploads/Articles/visual-interest-to-a-shaded-outdoor-garden.jpg"
-    ) {
-        Glide.with(binding.plantImage.context)
-            .load(imageUrl)
-            .apply(RequestOptions.circleCropTransform())
-            .placeholder(R.drawable.ic_menu_garden)
-            .into(binding.plantImage)
-    }
+        // Cargar la imagen del video (usando Glide)
+        Glide.with(binding.videoImage.context)
+            .load("https://example.com/video_thumbnail.jpg") // Cambia a la URL real
+            .into(binding.videoImage)
 
-    private fun configListeners(plant: Plant) {
+        // Configura el evento de clic utilizando la lambda
         binding.root.setOnClickListener {
-            listener.onPlantClick(plant)
-        }
-    }
-
-    private fun configLoadOwnedIcon(plant: Plant) {
-        if (plant.isOwned) {
-            binding.ownedIcon.setImageResource(R.drawable.ic_favorite_selected)
-        } else {
-            binding.ownedIcon.setImageResource(R.drawable.ic_favorite_unselected)
-        }
-    }
-
-    private fun loadClassification(plant: Plant) {
-        val plantClassification = when (plant.classification) {
-            PlantType.INDOOR -> R.string.plant_classification_indoor
-            PlantType.OUTDOOR -> R.string.plant_classification_outdoor
-            PlantType.SUCCULENT -> R.string.plant_classification_succulent
-            PlantType.OTHER -> R.string.plant_classification_other
-        }
-        val classificationText = "${getTextFromResource(R.string.plant_classification)}: ${getTextFromResource(plantClassification)}"
-        binding.plantClassification.text = classificationText
-    }
-
-    private fun getTextFromResource(resourceId: Int): String {
-        return binding.root.context.getString(resourceId)
-    }
-
-    companion object {
-        fun create(
-            listener: OnPlantClickListener,
-            parent: ViewGroup
-        ): PlantViewHolder {
-            val layoutInflater = LayoutInflater.from(parent.context)
-            val binding = ItemPlantBinding.inflate(layoutInflater, parent, false)
-            return PlantViewHolder(listener, binding)
+            onVideoClickListener(video) // Llama a la lambda al hacer clic
         }
     }
 }
