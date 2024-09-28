@@ -17,4 +17,5 @@
     <dimen name="item_small_image_width">24dp</dimen>
     <dimen name="item_small_image_height">24dp</dimen>
     <dimen name="item_elevation">4dp</dimen>
+    <dimen name="splash_size">150dp</dimen>">
 </resources>

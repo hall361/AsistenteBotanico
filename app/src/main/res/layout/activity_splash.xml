@@ -2,12 +2,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"> <!-- Color de fondo blanco -->
+    android:background="@color/white"> <!-- Cambia el color de fondo según lo desees -->
 
     <ImageView
         android:id="@+id/logo"
+        android:layout_width="@dimen/splash_size"
+        android:layout_height="@dimen/splash_size"
+        android:layout_centerInParent="true"
+        android:src="@drawable/your_logo" />
+
+    <TextView
+        android:id="@+id/countdown_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:src="@drawable/your_logo" /> <!-- Asegúrate de que 'your_logo' sea correcto -->
+        android:textSize="24sp"
+        android:textColor="@android:color/black" /> <!-- Ajusta el color y tamaño según necesites -->
+
 </RelativeLayout>
