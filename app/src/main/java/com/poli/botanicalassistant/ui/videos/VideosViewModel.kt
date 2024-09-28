@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.poli.botanicalassistant.domain.video.Video
+import com.poli.botanicalassistant.domain.video.VideoType
 
 /**
  * ViewModel that handles the logic for the VideosFragment.
@@ -20,8 +21,17 @@ class VideosViewModel : ViewModel() {
     fun loadInitialVideos() {
         // Simulación de carga de videos. Reemplaza esto con la carga real desde un repositorio o API.
         val sampleVideos = listOf(
-            Video("1", "Curso Kotlin", "2024-01-01", 1200, listOf("Course"), "Autor 1", "Server1"),
-            Video("2", "Tutorial Android", "2024-02-01", 900, listOf("Tutorial"), "Autor 2", "Server2")
+            Video(
+                id = "BA01",
+                videoName = "El REINO DE LAS PLANTAS",
+                creationDate = "2021-10-06",
+                duration = 804,
+                category = VideoType.INFO, // Categoría del video
+                author = "Lifeder Educación",
+                serverId = "https://www.youtube.com/watch?v=eCyfEb3B0SM",
+                imageUrl = "https://img.youtube.com/vi/eCyfEb3B0SM/0.jpg" // URL de la imagen del video
+            )
+            // Puedes agregar más videos aquí si es necesario
         )
         _videos.value = sampleVideos
     }

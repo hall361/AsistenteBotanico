@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.poli.botanicalassistant.R
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.poli.botanicalassistant.domain.video.Video
+import com.poli.botanicalassistant.domain.video.VideoType
 import androidx.navigation.fragment.findNavController
 import com.poli.botanicalassistant.ui.videos.VideosFragmentDirections
-
 
 class VideosFragment : Fragment() {
 
@@ -34,9 +34,9 @@ class VideosFragment : Fragment() {
         recyclerView = view.findViewById(R.id.recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(context)
 
-        videoAdapter = VideoAdapter(getVideoList()) { videoUrl ->
+        videoAdapter = VideoAdapter(getVideoList()) { videoId ->
             // Navegar al VideoPlayerFragment pasando el serverId como videoId
-            val action = VideosFragmentDirections.actionVideosFragmentToVideoPlayerFragment(videoUrl)
+            val action = VideosFragmentDirections.actionVideosFragmentToVideoPlayerFragment(videoId)
             findNavController().navigate(action)
         }
         recyclerView.adapter = videoAdapter
@@ -52,11 +52,32 @@ class VideosFragment : Fragment() {
         swipeRefreshLayout.isRefreshing = false // Detener la animación de refresco
     }
 
+    // Ajustado para incluir la imagen del video usando el campo "imageUrl"
     private fun getVideoList(): List<Video> {
         return listOf(
-            Video("1", "Video 1", "2024-01-01", 120, listOf("Categoría 1", "Categoría 2"), "Autor 1", "https://www.youtube.com/watch?v=eCyfEb3B0SM"),
-            Video("2", "Video 2", "2024-01-02", 150, listOf("Categoría 2"), "Autor 2", "https://www.youtube.com/watch?v=XYZ12345")
-            // Agrega más videos aquí
+            Video(
+                id = "BA01",
+                videoName = "El REINO DE LAS PLANTAS",
+                creationDate = "2021-10-06",
+                duration = 804,
+                category = VideoType.INFO,
+                author = "Lifeder Educación",
+                serverId = "https://www.youtube.com/watch?v=eCyfEb3B0SM",
+                imageUrl = "https://img.youtube.com/vi/eCyfEb3B0SM/0.jpg" // URL de la imagen del video
+            ),
+            Video(
+                id = "BA02",
+                videoName = "El CICLO DEL AGUA", // Aquí puedes agregar el nombre del video
+                creationDate = "2021-10-07", // Fecha de creación
+                duration = 708, // Duración en segundos
+                category = VideoType.INFO, // Cambiar a la categoría apropiada
+                author = "Lifeder Educación", // Nombre del autor
+                serverId = "https://www.youtube.com/watch?v=uwEGrB7fSgo", // URL del video
+                imageUrl = "https://img.youtube.com/vi/uwEGrB7fSgo/0.jpg" // URL de la imagen del video
+            )
+
+
+            // Puedes agregar más videos aquí si es necesario
         )
     }
 }
