@@ -7,5 +7,5 @@ data class Video(
     val duration: Int, // Duración en segundos
     val category: List<String>, // Categorías a las que pertenece el video
     val author: String, // Autor del video
-    val serverId: String // Identificador del servidor donde está almacenado el video
+    val serverId: String // URL del video
 )

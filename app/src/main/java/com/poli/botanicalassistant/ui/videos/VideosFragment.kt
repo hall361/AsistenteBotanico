@@ -10,6 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.poli.botanicalassistant.R
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.poli.botanicalassistant.domain.video.Video
+import androidx.navigation.fragment.findNavController
+import com.poli.botanicalassistant.ui.videos.VideosFragmentDirections
+
 
 class VideosFragment : Fragment() {
 
@@ -31,8 +34,10 @@ class VideosFragment : Fragment() {
         recyclerView = view.findViewById(R.id.recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(context)
 
-        videoAdapter = VideoAdapter(getVideoList()) { videoId ->
-            // Manejar el clic en el video aquí (puedes navegar a otro fragmento o actividad)
+        videoAdapter = VideoAdapter(getVideoList()) { videoUrl ->
+            // Navegar al VideoPlayerFragment pasando el serverId como videoId
+            val action = VideosFragmentDirections.actionVideosFragmentToVideoPlayerFragment(videoUrl)
+            findNavController().navigate(action)
         }
         recyclerView.adapter = videoAdapter
 
@@ -40,26 +45,17 @@ class VideosFragment : Fragment() {
         swipeRefreshLayout.setOnRefreshListener {
             refreshVideoList() // Método que refresca la lista de videos
         }
-
-        // Obtener videoId de los argumentos (si se necesita)
-        val videoId = arguments?.getString("videoId") // Asegúrate de usarlo si es necesario
-        if (videoId != null) {
-            // Lógica para usar videoId
-            // Por ejemplo, puedes cargar un video específico aquí
-        }
     }
 
     private fun refreshVideoList() {
-        // Aquí puedes recargar la lista de videos (por ejemplo, desde una API o fuente de datos)
         videoAdapter.notifyDataSetChanged() // Asegúrate de notificar al adaptador de los cambios
         swipeRefreshLayout.isRefreshing = false // Detener la animación de refresco
     }
 
     private fun getVideoList(): List<Video> {
-        // Aquí deberías llenar la lista con tus datos de video
         return listOf(
-            Video("1", "Video 1", "2024-01-01", 120, listOf("Categoría 1", "Categoría 2"), "Autor 1", "Servidor 1"),
-            Video("2", "Video 2", "2024-01-02", 150, listOf("Categoría 2"), "Autor 2", "Servidor 2")
+            Video("1", "Video 1", "2024-01-01", 120, listOf("Categoría 1", "Categoría 2"), "Autor 1", "https://www.youtube.com/watch?v=eCyfEb3B0SM"),
+            Video("2", "Video 2", "2024-01-02", 150, listOf("Categoría 2"), "Autor 2", "https://www.youtube.com/watch?v=XYZ12345")
             // Agrega más videos aquí
         )
     }

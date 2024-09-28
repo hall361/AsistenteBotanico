@@ -38,7 +38,7 @@ class VideoPlayerFragment : Fragment() {
             lifecycle.addObserver(this)
             addYouTubePlayerListener(object : AbstractYouTubePlayerListener() {
                 override fun onReady(youTubePlayer: YouTubePlayer) {
-                    val videoId = args.videoId
+                    val videoId = extractVideoId(args.videoId) // Extrae el ID de video de la URL
                     loadVideo(videoId, youTubePlayer)
                 }
 
@@ -49,10 +49,7 @@ class VideoPlayerFragment : Fragment() {
         }
     }
 
-    private fun loadVideo(
-        videoId: String,
-        youTubePlayer: YouTubePlayer
-    ) {
+    private fun loadVideo(videoId: String, youTubePlayer: YouTubePlayer) {
         try {
             youTubePlayer.loadVideo(videoId, 0f)
         } catch (e: Exception) {
@@ -62,17 +59,9 @@ class VideoPlayerFragment : Fragment() {
 
     private fun handleVideoError(error: PlayerError) {
         when (error) {
-            PlayerError.VIDEO_NOT_FOUND -> showErrorFeedback(
-                getString(R.string.video_player_error_video_not_found)
-            )
-
-            PlayerError.VIDEO_NOT_PLAYABLE_IN_EMBEDDED_PLAYER -> showErrorFeedback(
-                getString(R.string.video_player_error_video_not_playable)
-            )
-
-            else -> showErrorFeedback(
-                getString(R.string.video_player_error_unexpected)
-            )
+            PlayerError.VIDEO_NOT_FOUND -> showErrorFeedback(getString(R.string.video_player_error_video_not_found))
+            PlayerError.VIDEO_NOT_PLAYABLE_IN_EMBEDDED_PLAYER -> showErrorFeedback(getString(R.string.video_player_error_video_not_playable))
+            else -> showErrorFeedback(getString(R.string.video_player_error_unexpected))
         }
     }
 
@@ -82,6 +71,10 @@ class VideoPlayerFragment : Fragment() {
 
     private fun showErrorFeedback(message: String) {
         Toast.makeText(context, message, Toast.LENGTH_LONG).show()
+    }
+
+    private fun extractVideoId(videoUrl: String): String {
+        return videoUrl.substringAfter("v=").substringBefore("&") // Extrae el ID del video
     }
 
     override fun onDestroy() {

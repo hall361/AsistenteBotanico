@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/nav_tutorial">
+    app:startDestination="@id/nav_home">
 
     <fragment
         android:id="@+id/nav_home"
@@ -12,7 +12,11 @@
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_nav_home_to_nav_video_player"
-            app:destination="@id/nav_video_player" />
+            app:destination="@id/nav_video_player">
+            <argument
+                android:name="videoId"
+                app:argType="string" />
+        </action>
     </fragment>
 
     <fragment
@@ -27,7 +31,7 @@
         android:label="@string/menu_tutorials"
         tools:layout="@layout/fragment_slideshow">
         <action
-            android:id="@+id/action_nav_tutorial_to_videosFragment7"
+            android:id="@+id/action_nav_tutorial_to_videosFragment"
             app:destination="@id/videosFragment" />
     </fragment>
 
@@ -35,13 +39,21 @@
         android:id="@+id/videosFragment"
         android:name="com.poli.botanicalassistant.ui.videos.VideosFragment"
         android:label="@string/menu_videos"
-        tools:layout="@layout/fragment_videos" />
+        tools:layout="@layout/fragment_videos">
+        <action
+            android:id="@+id/action_videosFragment_to_videoPlayerFragment"
+            app:destination="@id/nav_video_player">
+            <argument
+                android:name="videoId"
+                app:argType="string" />
+        </action>
+    </fragment>
 
     <fragment
         android:id="@+id/nav_video_player"
         android:name="com.poli.botanicalassistant.ui.video.VideoPlayerFragment"
-        android:label="@string/menu_tutorials"
-        tools:layout="@layout/fragment_slideshow">
+        android:label="@string/menu_video_player"
+        tools:layout="@layout/fragment_video_player">
         <argument
             android:name="videoId"
             app:argType="string" />

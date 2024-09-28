@@ -19,12 +19,11 @@ class VideoAdapter(
         val videoAuthor: TextView = itemView.findViewById(R.id.video_author)
         val videoCreationDate: TextView = itemView.findViewById(R.id.video_creation_date)
         val videoDuration: TextView = itemView.findViewById(R.id.video_duration)
-        val videoThumbnail: ImageView = itemView.findViewById(R.id.video_image) // Miniatura del video
         val videoIcon: ImageView = itemView.findViewById(R.id.video_icon) // Ícono para acciones
 
         init {
             itemView.setOnClickListener {
-                onVideoClick(videoList[adapterPosition].id) // Llamar al callback al hacer clic
+                onVideoClick(videoList[adapterPosition].serverId) // Llamar al callback al hacer clic
             }
         }
     }
@@ -40,12 +39,6 @@ class VideoAdapter(
         holder.videoAuthor.text = video.author
         holder.videoCreationDate.text = video.creationDate
         holder.videoDuration.text = "${video.duration} segundos"
-
-        // Si tienes una imagen de miniatura, deberías cargarla aquí
-        // Puedes usar una librería como Glide o Picasso para cargar imágenes de URLs
-        // Glide.with(holder.itemView).load(video.thumbnailUrl).into(holder.videoThumbnail)
-
-        // Puedes añadir lógica para el ícono, por ejemplo, reproducir el video
         holder.videoIcon.setImageResource(R.drawable.ic_play) // Cambia a tu ícono deseado
     }
 
