@@ -38,7 +38,7 @@ class VideoPlayerFragment : Fragment() {
             lifecycle.addObserver(this)
             addYouTubePlayerListener(object : AbstractYouTubePlayerListener() {
                 override fun onReady(youTubePlayer: YouTubePlayer) {
-                    val videoId = extractVideoId(args.videoId) // Extrae el ID de video de la URL
+                    val videoId = extractVideoId(args.videoId) // Extrae el ID del video de la URL
                     loadVideo(videoId, youTubePlayer)
                 }
 
