@@ -29,7 +29,7 @@ class VideoPlayerFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        setupOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE)
+        setupOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR) // Permite tanto vertical como horizontal
         setupVideoPlayer()
     }
 

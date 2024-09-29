@@ -32,4 +32,7 @@
     <string name="video_player_error_video_not_found">The video you are trying to watch is not available. Please check the video ID.</string>
     <string name="video_player_error_video_not_playable">This video cannot be played in the app. Please try a different video.</string>
     <string name="video_player_error_unexpected">An unexpected error occurred while playing the video. Please try again later.</string>
+
+    <string name="fullscreen_icon_description">Fullscreen</string>
+
 </resources>
