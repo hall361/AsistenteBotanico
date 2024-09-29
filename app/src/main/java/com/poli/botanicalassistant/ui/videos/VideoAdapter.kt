@@ -42,7 +42,9 @@ class VideoAdapter(
         holder.videoAuthor.text = video.author
         holder.videoCreationDate.text = video.creationDate
         holder.videoDuration.text = "${video.duration} segundos"
-        holder.videoCategory.text = video.category.name // Mostrar la categoría
+
+        // Mostrar las categorías en el TextView, separadas por comas
+        holder.videoCategory.text = video.category.toString() // Aquí se mostrará la categoría. Asegúrate que el método `name` esté en VideoType.
 
         // Cargar la imagen del video usando Glide y la URL en imageUrl
         Glide.with(holder.itemView.context)

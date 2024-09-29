@@ -55,29 +55,39 @@ class VideosFragment : Fragment() {
     // Ajustado para incluir la imagen del video usando el campo "imageUrl"
     private fun getVideoList(): List<Video> {
         return listOf(
+
             Video(
                 id = "BA01",
-                videoName = "El REINO DE LAS PLANTAS",
-                creationDate = "2021-10-06",
-                duration = 804,
-                category = VideoType.INFO,
-                author = "Lifeder Educación",
-                serverId = "https://www.youtube.com/watch?v=eCyfEb3B0SM",
-                imageUrl = "https://img.youtube.com/vi/eCyfEb3B0SM/0.jpg" // URL de la imagen del video
+                videoName = "Cómo cuidar tus orquídeas",
+                creationDate = "2022-12-14",
+                duration = 130,
+                category = listOf(VideoType.TUTORIAL),
+                author = "The Home Depot México",
+                serverId = "https://www.youtube.com/watch?v=HlpFuis3kfE",
+                imageUrl = "https://img.youtube.com/vi/HlpFuis3kfE/0.jpg"
             ),
             Video(
                 id = "BA02",
-                videoName = "El CICLO DEL AGUA", // Aquí puedes agregar el nombre del video
-                creationDate = "2021-10-07", // Fecha de creación
-                duration = 708, // Duración en segundos
-                category = VideoType.INFO, // Cambiar a la categoría apropiada
-                author = "Lifeder Educación", // Nombre del autor
-                serverId = "https://www.youtube.com/watch?v=uwEGrB7fSgo", // URL del video
-                imageUrl = "https://img.youtube.com/vi/uwEGrB7fSgo/0.jpg" // URL de la imagen del video
+                videoName = "Cultivo y cuidado de los Cuernos o Helechos", // Aquí puedes agregar el nombre del video
+                creationDate = "2016-05-20", // Fecha de creación
+                duration = 1134, // Duración en segundos
+                category = listOf(VideoType.TUTORIAL, VideoType.INFO),// Categoría del video
+                author = "TvAgro", // Nombre del autor
+                serverId = "https://www.youtube.com/watch?v=GqUi41a1IaQ", // URL del video
+                imageUrl = "https://img.youtube.com/vi/GqUi41a1IaQ/0.jpg" // URL de la imagen del video
+            ),
+            Video(
+                id = "BA03",
+                videoName = "Como cuidar un cafeto en casa",
+                creationDate = "2016-02-27",
+                duration = 303,
+                category = listOf(VideoType.TUTORIAL),
+                author = "Café Kinetic",
+                serverId = "https://www.youtube.com/watch?v=JE82zoYVwwo",
+                imageUrl = "https://img.youtube.com/vi/JE82zoYVwwo/0.jpg"
             )
 
 
-            // Puedes agregar más videos aquí si es necesario
         )
     }
 }
