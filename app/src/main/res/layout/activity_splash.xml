@@ -9,14 +9,15 @@
         android:layout_width="@dimen/splash_size"
         android:layout_height="@dimen/splash_size"
         android:layout_centerInParent="true"
-        android:src="@drawable/your_logo" />
+        android:src="@drawable/your_logo" /> <!-- Reemplaza 'your_logo' con el nombre de tu archivo de imagen -->
 
     <TextView
         android:id="@+id/countdown_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
         android:textSize="24sp"
-        android:textColor="@android:color/black" /> <!-- Ajusta el color y tamaño según necesites -->
-
+        android:textColor="@android:color/black" />
 </RelativeLayout>
