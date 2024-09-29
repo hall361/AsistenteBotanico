@@ -85,6 +85,16 @@ class VideosFragment : Fragment() {
                 author = "Café Kinetic",
                 serverId = "https://www.youtube.com/watch?v=JE82zoYVwwo",
                 imageUrl = "https://img.youtube.com/vi/JE82zoYVwwo/0.jpg"
+            ),
+            Video(
+                id = "BA04",
+                videoName = "TOP 8 Plantas SUCULENTAS para INTERIOR (muy resistentes)",
+                creationDate = "2023-02-15",
+                duration = 1031,
+                category = listOf(VideoType.INFO, VideoType.OTHER),
+                author = "Azaregram",
+                serverId = "https://www.youtube.com/watch?v=9lTCSjNa8yI",
+                imageUrl = "https://img.youtube.com/vi/9lTCSjNa8yI/0.jpg"
             )
 
 
