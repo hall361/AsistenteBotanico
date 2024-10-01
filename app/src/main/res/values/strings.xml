@@ -2,12 +2,37 @@
     <string name="app_name">BotanicalAssistant</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Botanical assistant</string>
+    <string name="nav_header_subtitle">by HPM - B01 - 07 group</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
+    <string name="menu_garden">Garden</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tutorials">Tutorials</string>
+    <string name="menu_web">Web</string>
+    <string name="menu_video_player">Video Player</string> <!-- Añadido para el VideoPlayerFragment -->
+    <string name="menu_videos">Videos</string> <!-- Asegúrate de que esta línea esté presente -->
+
+    <string name="blog_image_preview">Blog image content description</string>
+    <string name="lab_input_url">URL</string>
+    <string name="action_load">Load</string>
+    <string name="plant_image">Plant image description</string>
+    <string name="plant_classification">Plant classification</string>
+    <string name="plant_classification_indoor">Indoor</string>
+    <string name="plant_classification_outdoor">Outdoor</string>
+    <string name="plant_classification_succulent">Succulent</string>
+    <string name="plant_classification_other">Other</string>
+
+    <string name="video_image">Video image description</string> <!-- Descripción de la imagen del video -->
+    <string name="video_icon">Video icon</string> <!-- Descripción accesible para el ícono de video -->
+
+    <string name="video_player_error_generic_video">There seems to be an issue playing the video. Please try again.</string>
+    <string name="video_player_error_video_not_found">The video you are trying to watch is not available. Please check the video ID.</string>
+    <string name="video_player_error_video_not_playable">This video cannot be played in the app. Please try a different video.</string>
+    <string name="video_player_error_unexpected">An unexpected error occurred while playing the video. Please try again later.</string>
+
+    <string name="fullscreen_icon_description">Fullscreen</string>
+
 </resources>

@@ -1,0 +1,8 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      - id: trailing-whitespace
+        description: "Remove trailing whitespace from code files"
+      - id: end-of-file-fixer
+        description: "Ensure files end with a newline"
