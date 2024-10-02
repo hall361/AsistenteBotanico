@@ -17,7 +17,7 @@
         android:id="@+id/imageView"
         android:layout_width="@dimen/logo_width"
         android:layout_height="@dimen/logo_height"
-        app:srcCompat="@drawable/your_logo" />
+        app:srcCompat="@drawable/botanical_assistant_img" />
 
     <TextView
         android:layout_width="match_parent"

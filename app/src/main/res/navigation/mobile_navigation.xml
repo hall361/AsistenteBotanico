@@ -3,13 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/nav_home">
+    app:startDestination="@id/nav_garden">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.poli.botanicalassistant.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home">
+        android:id="@+id/nav_about_us"
+        android:name="com.poli.botanicalassistant.ui.about.AboutUsFragment"
+        android:label="@string/menu_about_us"
+        tools:layout="@layout/fragment_about_us">
         <action
             android:id="@+id/action_nav_home_to_nav_video_player"
             app:destination="@id/nav_video_player">
