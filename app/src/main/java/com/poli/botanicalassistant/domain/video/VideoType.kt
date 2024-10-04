@@ -1,20 +1,20 @@
 package com.poli.botanicalassistant.domain.video
 
 /**
- * Enum class representing different types of videos.
+ * Enum class que representa diferentes tipos de videos.
  */
 enum class VideoType {
-    COURSE,      // Video que pertenece a un curso
-    TUTORIAL,    // Video tutorial
-    INFO,        // Videos informativos
-    OTHER;       // Otros tipos de videos
+    COURSE,
+    TUTORIAL,
+    INFO,
+    OTHER;
 
     companion object {
         /**
-         * Converts a string value into a VideoType enum.
+         * Convierte un valor de cadena en un enum de tipo VideoType.
          *
-         * @param value The string representation of the video type.
-         * @return The corresponding VideoType or OTHER if not found.
+         * @param value La representación en cadena del tipo de video.
+         * @return El VideoType correspondiente o OTHER si no se encuentra coincidencia.
          */
         fun fromString(value: String) = values().firstOrNull {
             it.name.equals(value, ignoreCase = true)
