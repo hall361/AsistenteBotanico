@@ -1,16 +1,16 @@
 package com.poli.botanicalassistant.domain.video
 
 /**
- * Representa un video con detalles sobre su nombre, autor, categoría, y otros atributos.
+ * Represents a video with its associated data.
  *
- * @property id El identificador único del video.
- * @property videoName El nombre del video.
- * @property creationDate La fecha de creación del video.
- * @property duration La duración del video en segundos.
- * @property category Lista de categorías a las que pertenece el video.
- * @property author El autor del video.
- * @property serverId El identificador del servidor donde está almacenado el video.
- * @property imageUrl La URL de la imagen del video.
+ * @property id Unique identifier for the video.
+ * @property videoName The name or title of the video.
+ * @property creationDate The date the video was created.
+ * @property duration The length of the video in seconds.
+ * @property category The category or type of the video.
+ * @property author The author or creator of the video.
+ * @property serverId Identifier for the server where the video is hosted.
+ * @property imageUrl The URL for the video's thumbnail image.
  */
 data class Video(
     val id: String,
