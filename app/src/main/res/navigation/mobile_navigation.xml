@@ -37,7 +37,7 @@
 
     <fragment
         android:id="@+id/videosFragment"
-        android:name="com.poli.botanicalassistant.ui.videos.VideosFragment"
+        android:name="com.poli.botanicalassistant.ui.video.VideosFragment"
         android:label="@string/menu_videos"
         tools:layout="@layout/fragment_videos">
         <action

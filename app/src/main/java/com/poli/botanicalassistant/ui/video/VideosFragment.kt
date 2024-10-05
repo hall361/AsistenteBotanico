@@ -1,4 +1,4 @@
-package com.poli.botanicalassistant.ui.videos
+package com.poli.botanicalassistant.ui.video
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -12,7 +12,6 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.poli.botanicalassistant.domain.video.Video
 import com.poli.botanicalassistant.domain.video.VideoType
 import androidx.navigation.fragment.findNavController
-import com.poli.botanicalassistant.ui.videos.VideosFragmentDirections
 
 class VideosFragment : Fragment() {
 
@@ -35,27 +34,23 @@ class VideosFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(context)
 
         videoAdapter = VideoAdapter(getVideoList()) { videoId ->
-            // Navegar al VideoPlayerFragment pasando el serverId como videoId
             val action = VideosFragmentDirections.actionVideosFragmentToVideoPlayerFragment(videoId)
             findNavController().navigate(action)
         }
         recyclerView.adapter = videoAdapter
 
-        // Configurar el SwipeRefreshLayout
         swipeRefreshLayout.setOnRefreshListener {
-            refreshVideoList() // Método que refresca la lista de videos
+            refreshVideoList()
         }
     }
 
     private fun refreshVideoList() {
-        videoAdapter.notifyDataSetChanged() // Asegúrate de notificar al adaptador de los cambios
-        swipeRefreshLayout.isRefreshing = false // Detener la animación de refresco
+        videoAdapter.notifyDataSetChanged()
+        swipeRefreshLayout.isRefreshing = false
     }
 
-    // Ajustado para incluir la imagen del video usando el campo "imageUrl"
     private fun getVideoList(): List<Video> {
         return listOf(
-
             Video(
                 id = "BA01",
                 videoName = "Cómo cuidar tus orquídeas",
@@ -68,13 +63,13 @@ class VideosFragment : Fragment() {
             ),
             Video(
                 id = "BA02",
-                videoName = "Cultivo y cuidado de los Cuernos o Helechos", // Aquí puedes agregar el nombre del video
-                creationDate = "2016-05-20", // Fecha de creación
-                duration = 1134, // Duración en segundos
-                category = listOf(VideoType.TUTORIAL, VideoType.INFO),// Categoría del video
-                author = "TvAgro", // Nombre del autor
-                serverId = "https://www.youtube.com/watch?v=GqUi41a1IaQ", // URL del video
-                imageUrl = "https://img.youtube.com/vi/GqUi41a1IaQ/0.jpg" // URL de la imagen del video
+                videoName = "Cultivo y cuidado de los Cuernos o Helechos",
+                creationDate = "2016-05-20",
+                duration = 1134,
+                category = listOf(VideoType.TUTORIAL, VideoType.INFO),
+                author = "TvAgro",
+                serverId = "https://www.youtube.com/watch?v=GqUi41a1IaQ",
+                imageUrl = "https://img.youtube.com/vi/GqUi41a1IaQ/0.jpg"
             ),
             Video(
                 id = "BA03",
@@ -96,8 +91,6 @@ class VideosFragment : Fragment() {
                 serverId = "https://www.youtube.com/watch?v=9lTCSjNa8yI",
                 imageUrl = "https://img.youtube.com/vi/9lTCSjNa8yI/0.jpg"
             )
-
-
         )
     }
 }

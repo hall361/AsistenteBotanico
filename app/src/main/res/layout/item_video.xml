@@ -13,7 +13,6 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <!-- Imagen del video colocada al lado izquierdo -->
         <ImageView
             android:id="@+id/video_image"
             android:layout_width="@dimen/item_image_width"
@@ -23,7 +22,6 @@
             android:contentDescription="@string/video_image"
             android:scaleType="centerCrop" />
 
-        <!-- Contenedor para los textos (nombre, autor, duración, categoría) a la derecha de la imagen -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -60,10 +58,9 @@
                 style="@style/SecondaryText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="" /> <!-- Este TextView es para mostrar la categoría del video -->
+                android:text="" />
         </LinearLayout>
 
-        <!-- Ícono de reproducción -->
         <ImageView
             android:id="@+id/video_icon"
             android:layout_width="@dimen/item_small_image_width"

@@ -4,10 +4,10 @@ package com.poli.botanicalassistant.domain.video
  * Enum class representing different types of videos.
  */
 enum class VideoType {
-    COURSE,      // Video que pertenece a un curso
-    TUTORIAL,    // Video tutorial
-    INFO,        // Videos informativos
-    OTHER;       // Otros tipos de videos
+    COURSE,      // Course video
+    TUTORIAL,    // Tutorial video
+    INFO,        // Informational video
+    OTHER;       // Other types of videos
 
     companion object {
         /**
