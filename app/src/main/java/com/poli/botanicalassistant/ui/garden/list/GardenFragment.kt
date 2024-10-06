@@ -1,4 +1,4 @@
-package com.poli.botanicalassistant.ui.garden
+package com.poli.botanicalassistant.ui.garden.list
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,7 +10,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.poli.botanicalassistant.databinding.FragmentGardenBinding
-import com.poli.botanicalassistant.domain.plant.Plant
+import com.poli.botanicalassistant.ui.garden.model.PlantUi
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -54,18 +54,17 @@ class GardenFragment : Fragment(), OnPlantClickListener {
     private fun observePlants() {
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
-                gardenViewModel.plantsStateFlow.collect { gardenUiState ->
+                gardenViewModel.gardenUiState.collect { gardenUiState ->
                     when (gardenUiState) {
                         is GardenUiState.Loading -> binding.swipeRefreshLayout.isRefreshing = true
                         is GardenUiState.Success -> updatePlants(gardenUiState.plants)
                     }
-
                 }
             }
         }
     }
 
-    private fun updatePlants(plants: List<Plant>) {
+    private fun updatePlants(plants: List<PlantUi>) {
         plantAdapter.submitList(plants)
         binding.swipeRefreshLayout.isRefreshing = false
     }
@@ -75,7 +74,7 @@ class GardenFragment : Fragment(), OnPlantClickListener {
         _binding = null
     }
 
-    override fun onPlantClick(plant: Plant) {
+    override fun onPlantClick(plant: PlantUi) {
         Toast.makeText(requireContext(), "Clicked: ${plant.commonName}", Toast.LENGTH_SHORT).show()
     }
 }
