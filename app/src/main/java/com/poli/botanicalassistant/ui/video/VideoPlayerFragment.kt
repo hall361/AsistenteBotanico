@@ -29,7 +29,7 @@ class VideoPlayerFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        setupOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR) // Permite tanto vertical como horizontal
+        setupOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR)
         setupVideoPlayer()
     }
 
@@ -38,7 +38,7 @@ class VideoPlayerFragment : Fragment() {
             lifecycle.addObserver(this)
             addYouTubePlayerListener(object : AbstractYouTubePlayerListener() {
                 override fun onReady(youTubePlayer: YouTubePlayer) {
-                    val videoId = extractVideoId(args.videoId) // Extrae el ID del video de la URL
+                    val videoId = extractVideoId(args.videoId)
                     loadVideo(videoId, youTubePlayer)
                 }
 
@@ -74,7 +74,7 @@ class VideoPlayerFragment : Fragment() {
     }
 
     private fun extractVideoId(videoUrl: String): String {
-        return videoUrl.substringAfter("v=").substringBefore("&") // Extrae el ID del video
+        return videoUrl.substringAfter("v=").substringBefore("&")
     }
 
     override fun onDestroy() {
