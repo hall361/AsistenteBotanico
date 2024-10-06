@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.safeargs)
     alias(libs.plugins.google.services)
+    id("kotlin-parcelize")
     kotlin("kapt")
 }
 
