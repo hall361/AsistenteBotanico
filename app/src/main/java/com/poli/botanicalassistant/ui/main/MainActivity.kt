@@ -1,4 +1,4 @@
-package com.poli.botanicalassistant
+package com.poli.botanicalassistant.ui.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +9,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
+import com.poli.botanicalassistant.R
 import com.poli.botanicalassistant.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

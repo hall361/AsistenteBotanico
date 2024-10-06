@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
-import com.poli.botanicalassistant.MainActivity
+import com.poli.botanicalassistant.ui.main.MainActivity
 import com.poli.botanicalassistant.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
