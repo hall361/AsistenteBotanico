@@ -16,17 +16,16 @@ class PlantViewHolder(
 ) : RecyclerView.ViewHolder(binding.root) {
 
     fun bind(plant: Plant) {
-        binding.plantCommonName.text = plant.commonName
-        binding.plantClassification.text = plant.classification.name
-        loadImage()
-        loadClassification(plant)
-        configListeners(plant)
-        configLoadOwnedIcon(plant)
+        with(plant) {
+            binding.plantCommonName.text = commonName
+            loadImage(imageUrl)
+            loadClassification(classification)
+            configLoadOwnedIcon(isOwned)
+            configListeners(this)
+        }
     }
 
-    private fun loadImage(
-        imageUrl: String = "https://sakder.com/wp-content/uploads/Articles/visual-interest-to-a-shaded-outdoor-garden.jpg"
-    ) {
+    private fun loadImage(imageUrl: String) {
         Glide.with(binding.plantImage.context)
             .load(imageUrl)
             .apply(RequestOptions.circleCropTransform())
@@ -40,16 +39,16 @@ class PlantViewHolder(
         }
     }
 
-    private fun configLoadOwnedIcon(plant: Plant) {
-        if (plant.isOwned) {
+    private fun configLoadOwnedIcon(isOwned: Boolean) {
+        if (isOwned) {
             binding.ownedIcon.setImageResource(R.drawable.ic_favorite_selected)
         } else {
             binding.ownedIcon.setImageResource(R.drawable.ic_favorite_unselected)
         }
     }
 
-    private fun loadClassification(plant: Plant) {
-        val plantClassification = when (plant.classification) {
+    private fun loadClassification(classification: PlantType) {
+        val plantClassification = when (classification) {
             PlantType.INDOOR -> R.string.plant_classification_indoor
             PlantType.OUTDOOR -> R.string.plant_classification_outdoor
             PlantType.SUCCULENT -> R.string.plant_classification_succulent

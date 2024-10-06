@@ -6,19 +6,20 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import com.poli.botanicalassistant.databinding.FragmentGardenBinding
 import com.poli.botanicalassistant.domain.plant.Plant
+import kotlinx.coroutines.launch
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class GardenFragment : Fragment(), OnPlantClickListener {
 
     private var _binding: FragmentGardenBinding? = null
     private val binding get() = _binding!!
-    private var _gardenViewModel: GardenViewModel? = null
-    private val gardenViewModel get() = _gardenViewModel!!
-    private val plantAdapter by lazy {
-        PlantAdapter(this)
-    }
+    private val gardenViewModel: GardenViewModel by viewModel()
+    private val plantAdapter by lazy { PlantAdapter(this) }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,12 +32,11 @@ class GardenFragment : Fragment(), OnPlantClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        _gardenViewModel = ViewModelProvider(this).get(GardenViewModel::class.java)
 
         setupRecyclerView()
         observePlants()
         configSwipeRefreshLayout()
-        gardenViewModel.loadInitialPlants()
+        gardenViewModel.loadPlants()
     }
 
     private fun setupRecyclerView() {
@@ -47,17 +47,27 @@ class GardenFragment : Fragment(), OnPlantClickListener {
 
     private fun configSwipeRefreshLayout() {
         binding.swipeRefreshLayout.setOnRefreshListener {
-            gardenViewModel.loadInitialPlants()
+            gardenViewModel.loadPlants()
         }
     }
 
     private fun observePlants() {
-        gardenViewModel.plants.observe(viewLifecycleOwner) { plants ->
-            plants?.let {
-                plantAdapter.submitList(it)
-                binding.swipeRefreshLayout.isRefreshing = false
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                gardenViewModel.plantsStateFlow.collect { gardenUiState ->
+                    when (gardenUiState) {
+                        is GardenUiState.Loading -> binding.swipeRefreshLayout.isRefreshing = true
+                        is GardenUiState.Success -> updatePlants(gardenUiState.plants)
+                    }
+
+                }
             }
         }
+    }
+
+    private fun updatePlants(plants: List<Plant>) {
+        plantAdapter.submitList(plants)
+        binding.swipeRefreshLayout.isRefreshing = false
     }
 
     override fun onDestroyView() {

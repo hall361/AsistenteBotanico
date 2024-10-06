@@ -57,6 +57,9 @@ dependencies {
     kapt(libs.glideCompiler)
     implementation(libs.android.youtube.player)
     implementation(libs.gms.firestore)
+    implementation(libs.coroutines)
+    implementation(libs.koin)
+    //implementation(libs.koin.viewmodel)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
