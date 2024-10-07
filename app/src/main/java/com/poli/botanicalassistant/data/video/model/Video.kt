@@ -1,4 +1,6 @@
-package com.poli.botanicalassistant.domain.video
+package com.poli.botanicalassistant.data.video.model
+
+import com.poli.botanicalassistant.domain.video.VideoType
 
 /**
  * Represents a video with its associated data.
@@ -13,12 +15,12 @@ package com.poli.botanicalassistant.domain.video
  * @property imageUrl The URL for the video's thumbnail image.
  */
 data class Video(
-    val id: String = "",
-    val videoName: String = "",
-    val creationDate: String = "",
-    val duration: Int = 0,
-    val category: List<VideoType> = listOf(),
-    val author: String = "",
-    val serverId: String = "",
-    val imageUrl: String = ""
+    val id: String,
+    val videoName: String,
+    val creationDate: String,
+    val duration: Int,
+    val category: List<VideoType>,
+    val author: String,
+    val serverId: String,
+    val imageUrl: String
 )
