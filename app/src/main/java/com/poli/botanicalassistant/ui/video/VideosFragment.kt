@@ -1,65 +1,83 @@
 package com.poli.botanicalassistant.ui.video
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.poli.botanicalassistant.R
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import androidx.navigation.fragment.findNavController
-import kotlinx.coroutines.launch
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.fragment.findNavController
+import com.poli.botanicalassistant.databinding.FragmentVideosBinding
+import com.poli.botanicalassistant.ui.video.model.VideoUi
+import kotlinx.coroutines.launch
+import org.koin.android.ext.android.inject
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class VideosFragment : Fragment() {
+class VideosFragment : Fragment(), OnVideoClickListener {
 
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var videoAdapter: VideoAdapter
-    private lateinit var swipeRefreshLayout: SwipeRefreshLayout
+    private var _binding: FragmentVideosBinding? = null
+    private val binding get() = _binding!!
     private val videosViewModel: VideosViewModel by viewModel()
+    private val videoAdapter: VideoAdapter by inject()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_videos, container, false)
+    ): View {
+        _binding = FragmentVideosBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        swipeRefreshLayout = view.findViewById(R.id.swipe_refresh_layout)
-        recyclerView = view.findViewById(R.id.recycler_view)
-        recyclerView.layoutManager = LinearLayoutManager(context)
-
-        videoAdapter = VideoAdapter(emptyList()) { videoId ->
-            val action = VideosFragmentDirections.actionVideosFragmentToVideoPlayerFragment(videoId)
-            findNavController().navigate(action)
-        }
-        recyclerView.adapter = videoAdapter
-
-        swipeRefreshLayout.setOnRefreshListener {
-            refreshVideoList()
-        }
+        setupRecyclerView()
+        observeVideos()
+        configSwipeRefreshLayout()
 
         videosViewModel.loadVideos()
+    }
+
+    private fun observeVideos() {
         viewLifecycleOwner.lifecycleScope.launch {
-            videosViewModel.videos.collect { videoList ->
-                videoAdapter = VideoAdapter(videoList) { videoId ->
-                    val action =
-                        VideosFragmentDirections.actionVideosFragmentToVideoPlayerFragment(videoId)
-                    findNavController().navigate(action)
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                videosViewModel.videosUiState.collect { state ->
+                    when (state) {
+                        is VideosUiState.Loading -> binding.swipeRefreshLayout.isRefreshing = true
+                        is VideosUiState.Success -> showVideos(state.videos)
+                    }
                 }
-                recyclerView.adapter = videoAdapter
             }
         }
     }
 
-    private fun refreshVideoList() {
-        videoAdapter.notifyDataSetChanged()
-        swipeRefreshLayout.isRefreshing = false
+    private fun configSwipeRefreshLayout() {
+        binding.swipeRefreshLayout.setOnRefreshListener {
+            videosViewModel.loadVideos()
+        }
+    }
+
+    private fun showVideos(videos: List<VideoUi>) {
+        videoAdapter.submitList(videos)
+        binding.swipeRefreshLayout.isRefreshing = false
+    }
+
+    private fun setupRecyclerView() {
+        videoAdapter.setListener(this)
+        binding.recyclerView.apply {
+            adapter = videoAdapter
+        }
+    }
+
+    override fun onVideoClick(video: VideoUi) {
+        val action = VideosFragmentDirections.actionVideosFragmentToVideoPlayerFragment(video.serverId)
+        findNavController().navigate(action)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 }

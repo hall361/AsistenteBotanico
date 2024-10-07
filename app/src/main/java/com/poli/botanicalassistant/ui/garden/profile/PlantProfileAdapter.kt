@@ -3,8 +3,15 @@ package com.poli.botanicalassistant.ui.garden.profile
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.poli.botanicalassistant.framework.ImageManager
+import com.poli.botanicalassistant.ui.garden.util.GardenDrawableUiUtils
+import com.poli.botanicalassistant.ui.garden.util.GardenTextUiUtils
 
-class PlantProfileAdapter : ListAdapter<PlantProfileUi, ViewHolder>(PlantProfileDiffCallback()) {
+class PlantProfileAdapter(
+    private val imageManager: ImageManager,
+    private val gardenDrawableUiUtils: GardenDrawableUiUtils,
+    private val gardenTextUiUtils: GardenTextUiUtils,
+) : ListAdapter<PlantProfileUi, ViewHolder>(PlantProfileDiffCallback()) {
 
     override fun getItemViewType(position: Int): Int {
         return when (getItem(position)) {
@@ -15,9 +22,23 @@ class PlantProfileAdapter : ListAdapter<PlantProfileUi, ViewHolder>(PlantProfile
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder = when (viewType) {
-        PlantProfileType.BASIC_INFO.ordinal -> PlantBasicInfoViewHolder.create(parent)
-        PlantProfileType.CARE_INFO.ordinal -> PlantCareInfoViewHolder.create(parent)
-        PlantProfileType.LIFE_CYCLE_INFO.ordinal -> PlantLifeCycleViewHolder.create(parent)
+        PlantProfileType.BASIC_INFO.ordinal -> PlantBasicInfoViewHolder.create(
+            parent,
+            imageManager,
+            gardenTextUiUtils,
+            gardenDrawableUiUtils
+        )
+
+        PlantProfileType.CARE_INFO.ordinal -> PlantCareInfoViewHolder.create(
+            parent,
+            gardenTextUiUtils
+        )
+
+        PlantProfileType.LIFE_CYCLE_INFO.ordinal -> PlantLifeCycleViewHolder.create(
+            parent,
+            gardenTextUiUtils
+        )
+
         else -> throw IllegalArgumentException("Invalid view type")
     }
 

@@ -30,17 +30,7 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_tutorial"
-        android:name="com.poli.botanicalassistant.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_tutorials"
-        tools:layout="@layout/fragment_slideshow">
-        <action
-            android:id="@+id/action_nav_tutorial_to_videosFragment"
-            app:destination="@id/videosFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/videosFragment"
+        android:id="@+id/nav_videos"
         android:name="com.poli.botanicalassistant.ui.video.VideosFragment"
         android:label="@string/menu_videos"
         tools:layout="@layout/fragment_videos">

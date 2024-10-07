@@ -30,17 +30,21 @@
             android:gravity="center_vertical"
             android:orientation="vertical">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/plant_common_name"
                 style="@style/TitleText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_plant_profile_common_name"
+                android:gravity="center_vertical" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/plant_classification"
                 style="@style/SecondaryText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_plant_profile_classification_indoor"
+                android:gravity="center_vertical" />
         </LinearLayout>
 
         <ImageView

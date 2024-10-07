@@ -1,4 +1,4 @@
-package com.poli.botanicalassistant.ui.video
+package com.poli.botanicalassistant.ui.video.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

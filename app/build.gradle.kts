@@ -58,8 +58,7 @@ dependencies {
     implementation(libs.android.youtube.player)
     implementation(libs.gms.firestore)
     implementation(libs.coroutines)
-    implementation("io.insert-koin:koin-android:3.3.0")
-    implementation("io.insert-koin:koin-androidx-compose:3.3.0")
+    implementation(libs.koin)
     implementation(libs.lzyzsd.circle.progress)
 
     testImplementation(libs.junit)

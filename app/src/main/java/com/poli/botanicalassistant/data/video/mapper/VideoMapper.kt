@@ -1,7 +1,7 @@
 package com.poli.botanicalassistant.data.video.mapper
 
 import com.poli.botanicalassistant.domain.video.Video
-import com.poli.botanicalassistant.ui.video.VideoUi
+import com.poli.botanicalassistant.ui.video.model.VideoUi
 
 fun Video.toUi() = VideoUi(
     id = this.id,
