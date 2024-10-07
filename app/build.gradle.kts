@@ -43,7 +43,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -59,8 +58,10 @@ dependencies {
     implementation(libs.android.youtube.player)
     implementation(libs.gms.firestore)
     implementation(libs.coroutines)
-    implementation(libs.koin)
-    //implementation(libs.koin.viewmodel)
+
+
+    implementation("io.insert-koin:koin-android:3.3.0")
+    implementation("io.insert-koin:koin-androidx-compose:3.3.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
