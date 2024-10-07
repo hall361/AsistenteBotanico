@@ -11,19 +11,18 @@
         android:label="@string/menu_about_us"
         tools:layout="@layout/fragment_about_us">
         <action
-            android:id="@+id/action_nav_home_to_nav_video_player"
-            app:destination="@id/nav_video_player">
-            <argument
-                android:name="videoId"
-                app:argType="string" />
-        </action>
+            android:id="@+id/action_nav_about_us_to_nav_garden"
+            app:destination="@id/nav_garden" />
+        <action
+            android:id="@+id/action_nav_about_us_to_nav_videos"
+            app:destination="@id/nav_videos" />
     </fragment>
 
     <fragment
         android:id="@+id/nav_garden"
         android:name="com.poli.botanicalassistant.ui.garden.list.GardenFragment"
         android:label="@string/menu_garden"
-        tools:layout="@layout/fragment_garden" >
+        tools:layout="@layout/fragment_garden">
         <action
             android:id="@+id/action_nav_garden_to_plantProfileFragment"
             app:destination="@id/plantProfileFragment" />
@@ -61,7 +60,7 @@
     <fragment
         android:id="@+id/plantProfileFragment"
         android:name="com.poli.botanicalassistant.ui.garden.profile.PlantProfileFragment"
-        android:label="@string/menu_plant_profile" >
+        android:label="@string/menu_plant_profile">
         <argument
             android:name="plant"
             app:argType="com.poli.botanicalassistant.ui.garden.model.PlantUi" />
