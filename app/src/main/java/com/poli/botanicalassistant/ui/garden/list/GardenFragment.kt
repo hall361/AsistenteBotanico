@@ -4,11 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.fragment.findNavController
 import com.poli.botanicalassistant.databinding.FragmentGardenBinding
 import com.poli.botanicalassistant.ui.garden.model.PlantUi
 import kotlinx.coroutines.launch
@@ -75,6 +75,7 @@ class GardenFragment : Fragment(), OnPlantClickListener {
     }
 
     override fun onPlantClick(plant: PlantUi) {
-        Toast.makeText(requireContext(), "Clicked: ${plant.commonName}", Toast.LENGTH_SHORT).show()
+        val action = GardenFragmentDirections.actionNavGardenToPlantProfileFragment(plant)
+        findNavController().navigate(action)
     }
 }

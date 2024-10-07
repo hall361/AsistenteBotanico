@@ -60,7 +60,7 @@ dependencies {
     implementation(libs.gms.firestore)
     implementation(libs.coroutines)
     implementation(libs.koin)
-    //implementation(libs.koin.viewmodel)
+    implementation(libs.lzyzsd.circle.progress)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

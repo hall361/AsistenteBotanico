@@ -17,4 +17,14 @@
     <color name="color_on_background">#293829</color>
     <color name="color_on_surface_variant">#757575</color>
     <color name="white">#FFFFFF</color>
+    <color name="humidity_progress_color">#1E88E5</color>
+    <color name="temperature_progress_color">#FF8F00</color>
+    <color name="growth_speed_color">#627162</color>
+    <color name="seasonality_color">#627162</color>
+    <color name="plant_common_name_color">#66BB6A</color>
+    <color name="plant_scientific_name_color">#42A5F5</color>
+    <color name="plant_classification_indoor_color">#66BB6A</color>
+    <color name="plant_classification_outdoor_color">#388E3C</color>
+    <color name="plant_classification_succulent_color">#00897B</color>
+    <color name="plant_classification_other_color">#FFA726</color>
 </resources>
