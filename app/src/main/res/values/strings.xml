@@ -51,6 +51,17 @@
     <string name="mission_statement">
     With these features, our mission is to empower you to take better care of your plants and help you grow your gardening knowledge.
 </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_plant_profile">Plant profile</string>
 
-
+    <string name="plant_profile_lightning">Lightning</string>
+    <string name="plant_profile_water_amount">Water amount</string>
+    <string name="plant_profile_humidity">Humidity</string>
+    <string name="plant_profile_temperature">Temperature</string>
+    <string name="plant_profile_care_info">Care info</string>
+    <string name="plant_profile_life_cycle">Life cycle info</string>
+    <string name="plant_profile_seasonality">Seasonality</string>
+    <string name="plant_profile_growth_speed">Growth speed</string>
+    <string name="plant_profile_basic_info">Basic info</string>
 </resources>
