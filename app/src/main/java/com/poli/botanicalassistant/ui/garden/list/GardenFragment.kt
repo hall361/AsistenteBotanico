@@ -12,6 +12,7 @@ import androidx.navigation.fragment.findNavController
 import com.poli.botanicalassistant.databinding.FragmentGardenBinding
 import com.poli.botanicalassistant.ui.garden.model.PlantUi
 import kotlinx.coroutines.launch
+import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class GardenFragment : Fragment(), OnPlantClickListener {
@@ -19,7 +20,7 @@ class GardenFragment : Fragment(), OnPlantClickListener {
     private var _binding: FragmentGardenBinding? = null
     private val binding get() = _binding!!
     private val gardenViewModel: GardenViewModel by viewModel()
-    private val plantAdapter by lazy { PlantAdapter(this) }
+    private val gardenAdapter: GardenAdapter by inject()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,12 +37,14 @@ class GardenFragment : Fragment(), OnPlantClickListener {
         setupRecyclerView()
         observePlants()
         configSwipeRefreshLayout()
+
         gardenViewModel.loadPlants()
     }
 
     private fun setupRecyclerView() {
+        gardenAdapter.setListener(this)
         binding.recyclerView.apply {
-            adapter = plantAdapter
+            adapter = gardenAdapter
         }
     }
 
@@ -65,7 +68,7 @@ class GardenFragment : Fragment(), OnPlantClickListener {
     }
 
     private fun updatePlants(plants: List<PlantUi>) {
-        plantAdapter.submitList(plants)
+        gardenAdapter.submitList(plants)
         binding.swipeRefreshLayout.isRefreshing = false
     }
 

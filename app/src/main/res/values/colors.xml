@@ -27,4 +27,5 @@
     <color name="plant_classification_outdoor_color">#388E3C</color>
     <color name="plant_classification_succulent_color">#00897B</color>
     <color name="plant_classification_other_color">#FFA726</color>
+    <color name="splash_raindrop_color">#81D4FA</color>
 </resources>

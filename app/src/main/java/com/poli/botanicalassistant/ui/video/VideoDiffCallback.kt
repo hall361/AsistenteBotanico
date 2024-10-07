@@ -1,15 +1,15 @@
 package com.poli.botanicalassistant.ui.video
 
 import androidx.recyclerview.widget.DiffUtil
-import com.poli.botanicalassistant.domain.video.Video
+import com.poli.botanicalassistant.ui.video.model.VideoUi
 
-class VideoDiffCallback : DiffUtil.ItemCallback<Video>() {
+class VideoDiffCallback : DiffUtil.ItemCallback<VideoUi>() {
 
-    override fun areItemsTheSame(oldItem: Video, newItem: Video): Boolean {
+    override fun areItemsTheSame(oldItem: VideoUi, newItem: VideoUi): Boolean {
         return oldItem.id == newItem.id
     }
 
-    override fun areContentsTheSame(oldItem: Video, newItem: Video): Boolean {
+    override fun areContentsTheSame(oldItem: VideoUi, newItem: VideoUi): Boolean {
         return oldItem == newItem
     }
 }

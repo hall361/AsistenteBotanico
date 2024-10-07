@@ -5,10 +5,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.poli.botanicalassistant.R
 import com.poli.botanicalassistant.databinding.ItemPlantCareInfoBinding
-import com.poli.botanicalassistant.ui.garden.ui.GardenTextUiUtils.getProfileTextValue
+import com.poli.botanicalassistant.ui.garden.util.GardenTextUiUtils
 
 class PlantCareInfoViewHolder(
-    private val binding: ItemPlantCareInfoBinding
+    private val binding: ItemPlantCareInfoBinding,
+    private val gardenTextUiUtils: GardenTextUiUtils
 ) : RecyclerView.ViewHolder(binding.root) {
 
     fun bind(careInfo: PlantProfileUi.CareInfo) {
@@ -44,9 +45,10 @@ class PlantCareInfoViewHolder(
         .split(PROGRESS_SPLIT_DELIMITER)[MAX_PROGRESS_INDEX_POSITION]
         .toFloat()
 
-    private fun getCareInfoText(careInfoText: String, resourceId: Int): String = binding.root
-        .context
-        .getProfileTextValue(careInfoText, resourceId)
+    private fun getCareInfoText(careInfoText: String, resourceId: Int): String = gardenTextUiUtils.getProfileTextValue(
+        careInfoText,
+        resourceId
+    )
 
     companion object {
         private const val HUMIDITY_SUFFIX_PERCENTAGE = "%"
@@ -54,10 +56,13 @@ class PlantCareInfoViewHolder(
         private const val PROGRESS_SPLIT_DELIMITER = "-"
         private const val MAX_PROGRESS_INDEX_POSITION = 1
 
-        fun create(parent: ViewGroup): PlantCareInfoViewHolder {
+        fun create(
+            parent: ViewGroup,
+            gardenTextUiUtils: GardenTextUiUtils
+        ): PlantCareInfoViewHolder {
             val layoutInflater = LayoutInflater.from(parent.context)
             val binding = ItemPlantCareInfoBinding.inflate(layoutInflater, parent, false)
-            return PlantCareInfoViewHolder(binding)
+            return PlantCareInfoViewHolder(binding, gardenTextUiUtils)
         }
     }
 }

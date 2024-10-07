@@ -1,6 +1,8 @@
 package com.poli.botanicalassistant
 
 import android.app.Application
+import com.poli.botanicalassistant.di.firebaseModule
+import com.poli.botanicalassistant.di.frameworkModule
 import com.poli.botanicalassistant.di.gardenModule
 import com.poli.botanicalassistant.di.videoModule
 import org.koin.android.ext.koin.androidContext
@@ -13,7 +15,12 @@ class BotanicalAssistantApplication : Application() {
 
         startKoin {
             androidContext(this@BotanicalAssistantApplication)
-            modules(gardenModule, videoModule)
+            modules(
+                firebaseModule,
+                frameworkModule,
+                gardenModule,
+                videoModule
+            )
         }
     }
 }

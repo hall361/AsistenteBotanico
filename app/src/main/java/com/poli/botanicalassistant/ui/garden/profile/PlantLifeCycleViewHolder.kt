@@ -5,10 +5,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.poli.botanicalassistant.R
 import com.poli.botanicalassistant.databinding.ItemPlantLifeCycleBinding
-import com.poli.botanicalassistant.ui.garden.ui.GardenTextUiUtils.getProfileTextValue
+import com.poli.botanicalassistant.ui.garden.util.GardenTextUiUtils
 
 class PlantLifeCycleViewHolder(
-    private val binding: ItemPlantLifeCycleBinding
+    private val binding: ItemPlantLifeCycleBinding,
+    private val gardenTextUiUtils: GardenTextUiUtils
 ) : RecyclerView.ViewHolder(binding.root) {
 
     fun bind(lifeCycle: PlantProfileUi.LifeCycleInfo) {
@@ -26,15 +27,19 @@ class PlantLifeCycleViewHolder(
         binding.seasonalityText.text = getLifeCycleText(seasonality, R.string.plant_profile_seasonality)
     }
 
-    private fun getLifeCycleText(lifeCycleText: String, resourceId: Int) = binding.root
-        .context
-        .getProfileTextValue(lifeCycleText, resourceId)
+    private fun getLifeCycleText(lifeCycleText: String, resourceId: Int) = gardenTextUiUtils.getProfileTextValue(
+        lifeCycleText,
+        resourceId
+    )
 
-    companion object{
-        fun create(parent: ViewGroup): PlantLifeCycleViewHolder {
+    companion object {
+        fun create(
+            parent: ViewGroup,
+            gardenTextUiUtils: GardenTextUiUtils
+        ): PlantLifeCycleViewHolder {
             val layoutInflater = LayoutInflater.from(parent.context)
             val binding = ItemPlantLifeCycleBinding.inflate(layoutInflater, parent, false)
-            return PlantLifeCycleViewHolder(binding)
+            return PlantLifeCycleViewHolder(binding, gardenTextUiUtils)
         }
     }
 }

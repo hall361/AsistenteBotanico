@@ -7,12 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.poli.botanicalassistant.databinding.FragmentPlantProfileBinding
+import org.koin.android.ext.android.inject
 
 class PlantProfileFragment : Fragment() {
 
     private var _binding: FragmentPlantProfileBinding? = null
     private val binding get() = _binding!!
-    private val plantProfileAdapter by lazy { PlantProfileAdapter() }
+    private val plantProfileAdapter: PlantProfileAdapter by inject()
     private val args: PlantProfileFragmentArgs by navArgs()
 
     override fun onCreateView(

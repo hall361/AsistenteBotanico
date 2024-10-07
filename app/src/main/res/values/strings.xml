@@ -11,7 +11,6 @@
     <string name="menu_about_us">About us</string>
     <string name="menu_garden">Garden</string>
     <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tutorials">Tutorials</string>
     <string name="menu_web">Web</string>
     <string name="menu_video_player">Video Player</string>
     <string name="menu_videos">Videos</string>
@@ -20,7 +19,7 @@
     <string name="lab_input_url">URL</string>
     <string name="action_load">Load</string>
     <string name="plant_image">Plant image description</string>
-    <string name="plant_classification">Plant classification</string>
+    <string name="plant_classification">Classification</string>
     <string name="plant_classification_indoor">Indoor</string>
     <string name="plant_classification_outdoor">Outdoor</string>
     <string name="plant_classification_succulent">Succulent</string>
