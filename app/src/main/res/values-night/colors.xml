@@ -27,4 +27,8 @@
     <color name="plant_classification_succulent_color">#4DB6AC</color>
     <color name="plant_classification_other_color">#FFCC80</color>
     <color name="splash_raindrop_color">#29B6F6</color>
+    <color name="feature_offered_database_color">#81C784</color>
+    <color name="feature_offered_care_color">#FFCC80</color>
+    <color name="feature_offered_video_tutorial_color">#64B5F6</color>
+    <color name="feature_offered_web_navigation_color">#4FC3F7</color>
 </resources>

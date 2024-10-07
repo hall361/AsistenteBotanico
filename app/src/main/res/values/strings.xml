@@ -3,7 +3,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Botanical assistant</string>
-    <string name="nav_header_subtitle">by HPM - B01 - 07 group</string>
+    <string name="nav_header_subtitle">by Botanical assistant team</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -41,19 +41,16 @@
     <string name="privacy_policy">Privacy Policy</string>
     <string name="terms_of_service">Terms of Service</string>
     <string name="what_we_offer_title">What We Offer</string>
-    <string name="welcome_message">Welcome to our app, designed to provide everything you need to know about plants! Here’s what you can explore:</string>
+    <string name="about_us_welcome_message">Welcome to our app, designed to provide everything you need to know about plants! Here’s what you can explore:</string>
     <string name="plant_database_feature">Extensive Plant Database: Browse through a wide variety of plants, each accompanied by detailed information such as life cycles, care instructions, and categories.</string>
     <string name="plant_care_guidance_feature">Plant Care Guidance: Discover how to properly nurture and care for your plants with personalized tips on watering, sunlight, and ideal temperatures.</string>
     <string name="video_tutorials_feature">Video Tutorials: Access a curated collection of videos offering tutorials, recommendations, and expert advice on planting, care, and more.</string>
     <string name="web_navigation_feature">Web Navigation: Easily search and explore web pages dedicated to plant-related content, helping you find exactly what you are looking for.</string>
+    <string name="mission_statement">With these features, our mission is to empower you to take better care of your plants and help you grow your gardening knowledge.</string>
+    <string name="continue_exploring_title">Continue Exploring</string>
+    <string name="continue_exploring_description">Keep discovering the fascinating world of plants and enhance your skills with the features Botanical Assistant offers!</string>
 
-    <string name="mission_statement">
-    With these features, our mission is to empower you to take better care of your plants and help you grow your gardening knowledge.
-</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="menu_plant_profile">Plant profile</string>
-
     <string name="plant_profile_lightning">Lightning</string>
     <string name="plant_profile_water_amount">Water amount</string>
     <string name="plant_profile_humidity">Humidity</string>
@@ -63,4 +60,6 @@
     <string name="plant_profile_seasonality">Seasonality</string>
     <string name="plant_profile_growth_speed">Growth speed</string>
     <string name="plant_profile_basic_info">Basic info</string>
+    <string name="go_to_garden">Go to garden!</string>
+    <string name="go_to_videos">Go to videos!</string>
 </resources>
