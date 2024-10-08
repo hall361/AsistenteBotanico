@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Asistente Botánico</string>
+    <string name="navigation_drawer_open">Abrir el menú de navegación</string>
+    <string name="navigation_drawer_close">Cerrar el menú de navegación</string>
+    <string name="nav_header_title">Asistente Botánico</string>
+    <string name="nav_header_subtitle">Hecho por el equipo de Asistente Botánico</string>
+    <string name="nav_header_desc">Navegación</string>
+    <string name="action_settings">Configuraciones</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_about_us">Nosotros</string>
+    <string name="menu_garden">Jardín</string>
+    <string name="menu_slideshow">Presentación</string>
+    <string name="menu_web">Web</string>
+    <string name="menu_video_player">Reproductor de Video</string>
+    <string name="menu_videos">Videos</string>
+
+    <string name="blog_image_preview">Vista previa de la imagen del blog</string>
+    <string name="lab_input_url">URL</string>
+    <string name="action_load">Cargar</string>
+    <string name="plant_image">Descripción de la imagen de la planta</string>
+    <string name="plant_classification">Clasificación</string>
+    <string name="plant_classification_indoor">Interior</string>
+    <string name="plant_classification_outdoor">Exterior</string>
+    <string name="plant_classification_succulent">Suculenta</string>
+    <string name="plant_classification_other">Otra</string>
+
+    <string name="video_image">Descripción de la imagen del video</string>
+    <string name="video_icon">Ícono del video</string>
+
+    <string name="video_player_error_generic_video">Parece que hay un problema al reproducir el video. Intenta nuevamente.</string>
+    <string name="video_player_error_video_not_found">El video que intentas ver no está disponible. Verifica el ID del video.</string>
+    <string name="video_player_error_video_not_playable">Este video no puede ser reproducido en la aplicación. Prueba con otro video.</string>
+    <string name="video_player_error_unexpected">Ocurrió un error inesperado al reproducir el video. Intenta nuevamente más tarde.</string>
+
+    <string name="fullscreen_icon_description">Pantalla Completa</string>
+
+    <string name="about_app_description">Asistente Botánico te ayuda a identificar y cuidar tus plantas con recomendaciones personalizadas y una extensa base de datos de plantas.</string>
+    <string name="features_title">Características Principales</string>
+    <string name="about_team">Desarrollado por el equipo de Asistente Botánico</string>
+    <string name="privacy_policy">Política de Privacidad</string>
+    <string name="terms_of_service">Términos del Servicio</string>
+    <string name="what_we_offer_title">Lo que Ofrecemos</string>
+    <string name="about_us_welcome_message">Bienvenido a nuestra aplicación, diseñada para brindarte todo lo que necesitas saber sobre plantas. Aquí puedes explorar:</string>
+    <string name="plant_database_feature">Base de Datos de Plantas: Explora una amplia variedad de plantas, cada una acompañada de información detallada sobre sus ciclos de vida, cuidados y categorías.</string>
+    <string name="plant_care_guidance_feature">Guía de Cuidado de Plantas: Descubre cómo cuidar adecuadamente tus plantas con consejos personalizados sobre riego, luz solar y temperaturas ideales.</string>
+    <string name="video_tutorials_feature">Tutoriales en Video: Accede a una colección de videos con tutoriales, recomendaciones y consejos de expertos sobre plantación, cuidado, y más.</string>
+    <string name="web_navigation_feature">Navegación Web: Busca y explora fácilmente páginas web dedicadas al contenido relacionado con plantas, ayudándote a encontrar exactamente lo que necesitas.</string>
+    <string name="mission_statement">Con estas características, nuestra misión es ayudarte a cuidar mejor tus plantas y a aumentar tu conocimiento sobre jardinería.</string>
+    <string name="continue_exploring_title">Sigue Explorando</string>
+    <string name="continue_exploring_description">Continúa descubriendo el fascinante mundo de las plantas y mejora tus habilidades con las funciones que ofrece Asistente Botánico.</string>
+
+    <string name="menu_plant_profile">Perfil de la Planta</string>
+    <string name="plant_profile_lightning">Luz</string>
+    <string name="plant_profile_water_amount">Cantidad de Agua</string>
+    <string name="plant_profile_humidity">Humedad</string>
+    <string name="plant_profile_temperature">Temperatura</string>
+    <string name="plant_profile_care_info">Información de Cuidado</string>
+    <string name="plant_profile_life_cycle">Ciclo de Vida</string>
+    <string name="plant_profile_seasonality">Estacionalidad</string>
+    <string name="plant_profile_growth_speed">Velocidad de Crecimiento</string>
+    <string name="plant_profile_basic_info">Información Básica</string>
+    <string name="go_to_garden">Ir al Jardín</string>
+    <string name="go_to_videos">Ir a Videos</string>
+</resources>
