@@ -3,12 +3,12 @@
     <string name="navigation_drawer_open">Abrir el menú de navegación</string>
     <string name="navigation_drawer_close">Cerrar el menú de navegación</string>
     <string name="nav_header_title">Asistente Botánico</string>
-    <string name="nav_header_subtitle">por el equipo de Asistente Botánico</string>
-    <string name="nav_header_desc">Encabezado de navegación</string>
+    <string name="nav_header_subtitle">Hecho por el equipo de Asistente Botánico</string>
+    <string name="nav_header_desc">Navegación</string>
     <string name="action_settings">Configuraciones</string>
 
     <string name="menu_home">Inicio</string>
-    <string name="menu_about_us">Sobre Nosotros</string>
+    <string name="menu_about_us">Nosotros</string>
     <string name="menu_garden">Jardín</string>
     <string name="menu_slideshow">Presentación</string>
     <string name="menu_web">Web</string>
@@ -61,5 +61,5 @@
     <string name="plant_profile_growth_speed">Velocidad de Crecimiento</string>
     <string name="plant_profile_basic_info">Información Básica</string>
     <string name="go_to_garden">Ir al Jardín</string>
-    <string name="go_to_videos">Ir a los Videos</string>
+    <string name="go_to_videos">Ir a Videos</string>
 </resources>
