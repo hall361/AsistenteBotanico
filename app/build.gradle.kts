@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.safeargs)
+    alias(libs.plugins.google.services)
+    id("kotlin-parcelize")
     kotlin("kapt")
 }
 
@@ -41,7 +43,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -55,6 +56,10 @@ dependencies {
     implementation(libs.glide)
     kapt(libs.glideCompiler)
     implementation(libs.android.youtube.player)
+    implementation(libs.gms.firestore)
+    implementation(libs.coroutines)
+    implementation(libs.koin)
+    implementation(libs.lzyzsd.circle.progress)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

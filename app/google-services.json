@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "586689381615",
+    "firebase_url": "https://botanical-assistant-app-default-rtdb.firebaseio.com",
+    "project_id": "botanical-assistant-app",
+    "storage_bucket": "botanical-assistant-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586689381615:android:2bae5a14b34de78a60471a",
+        "android_client_info": {
+          "package_name": "com.poli.botanicalassistant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBniUPyhDnlH0CToppiMKahluFSlXUrd3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

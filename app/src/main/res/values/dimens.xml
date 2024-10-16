@@ -19,5 +19,9 @@
     <dimen name="item_elevation">4dp</dimen>
     <dimen name="splash_size">150dp</dimen>
     <dimen name="logo_width">95dp</dimen>
-    <dimen name="logo_height">94dp</dimen>
+    <dimen name="logo_height">95dp</dimen>
+    <dimen name="text_data_padding">2dp</dimen>
+    <dimen name="text_data_extra_padding">8dp</dimen>
+    <dimen name="circle_progress_profile_size">100dp</dimen>
+    <dimen name="plant_photo_profile_size">100dp</dimen>
 </resources>
