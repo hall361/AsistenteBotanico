@@ -1,0 +1,59 @@
+com.poli.botanicalassistant.app-activity-ktx-1.8.1-0 C:\Users\hall3\.gradle\caches\8.11.1\transforms\02d69503c29aed0f8d4671323b5e5478\transformed\activity-ktx-1.8.1\res
+com.poli.botanicalassistant.app-startup-runtime-1.1.1-1 C:\Users\hall3\.gradle\caches\8.11.1\transforms\02f1cc1572b8863b8de44f09672f70cd\transformed\startup-runtime-1.1.1\res
+com.poli.botanicalassistant.app-core-runtime-2.2.0-2 C:\Users\hall3\.gradle\caches\8.11.1\transforms\0b9aaae63d7174c11340cec4d383881c\transformed\core-runtime-2.2.0\res
+com.poli.botanicalassistant.app-constraintlayout-2.1.4-3 C:\Users\hall3\.gradle\caches\8.11.1\transforms\26b4f1022dce4cc483a1b3869151a99d\transformed\constraintlayout-2.1.4\res
+com.poli.botanicalassistant.app-navigation-fragment-2.6.0-4 C:\Users\hall3\.gradle\caches\8.11.1\transforms\2d39a11ed1d557bd351f2a13089aef55\transformed\navigation-fragment-2.6.0\res
+com.poli.botanicalassistant.app-emoji2-views-helper-1.2.0-5 C:\Users\hall3\.gradle\caches\8.11.1\transforms\355be694e98871cc08e98339e9df6a08\transformed\emoji2-views-helper-1.2.0\res
+com.poli.botanicalassistant.app-slidingpanelayout-1.2.0-6 C:\Users\hall3\.gradle\caches\8.11.1\transforms\3dba70c2d541583481c6cfde9da366b4\transformed\slidingpanelayout-1.2.0\res
+com.poli.botanicalassistant.app-lifecycle-livedata-core-ktx-2.8.5-7 C:\Users\hall3\.gradle\caches\8.11.1\transforms\48edf631bace1a88c88b0785f944d1b2\transformed\lifecycle-livedata-core-ktx-2.8.5\res
+com.poli.botanicalassistant.app-glide-4.15.1-8 C:\Users\hall3\.gradle\caches\8.11.1\transforms\51b82a1c990b5deaf248fe2d14825a1d\transformed\glide-4.15.1\res
+com.poli.botanicalassistant.app-media-1.0.0-9 C:\Users\hall3\.gradle\caches\8.11.1\transforms\552fa5c1869bfe18f30f8deed2bc46a7\transformed\media-1.0.0\res
+com.poli.botanicalassistant.app-fragment-1.8.2-10 C:\Users\hall3\.gradle\caches\8.11.1\transforms\59ca795364b3e24cba7c29f0937635e6\transformed\fragment-1.8.2\res
+com.poli.botanicalassistant.app-play-services-base-18.0.1-11 C:\Users\hall3\.gradle\caches\8.11.1\transforms\671cab3c6736523852f1974397ecc716\transformed\play-services-base-18.0.1\res
+com.poli.botanicalassistant.app-play-services-basement-18.1.0-12 C:\Users\hall3\.gradle\caches\8.11.1\transforms\6c4df3b8a52ebd853eb33baedbb561df\transformed\play-services-basement-18.1.0\res
+com.poli.botanicalassistant.app-lifecycle-runtime-ktx-release-13 C:\Users\hall3\.gradle\caches\8.11.1\transforms\724adb35870181f12eb60328e4619dd2\transformed\lifecycle-runtime-ktx-release\res
+com.poli.botanicalassistant.app-firebase-common-20.3.1-14 C:\Users\hall3\.gradle\caches\8.11.1\transforms\76d9a9bee7ead1e50016b6c4a9258970\transformed\firebase-common-20.3.1\res
+com.poli.botanicalassistant.app-emoji2-1.2.0-15 C:\Users\hall3\.gradle\caches\8.11.1\transforms\83b054d359fd251bfeb390163f189b85\transformed\emoji2-1.2.0\res
+com.poli.botanicalassistant.app-annotation-experimental-1.4.0-16 C:\Users\hall3\.gradle\caches\8.11.1\transforms\863757e82a0355de0c41752185b48a37\transformed\annotation-experimental-1.4.0\res
+com.poli.botanicalassistant.app-lifecycle-livedata-2.8.5-17 C:\Users\hall3\.gradle\caches\8.11.1\transforms\8c6e8a982b0dd8ae5f19a1ec758ef789\transformed\lifecycle-livedata-2.8.5\res
+com.poli.botanicalassistant.app-navigation-common-2.6.0-18 C:\Users\hall3\.gradle\caches\8.11.1\transforms\8dcec442318074d3663f7bd79cacc34a\transformed\navigation-common-2.6.0\res
+com.poli.botanicalassistant.app-lifecycle-runtime-release-19 C:\Users\hall3\.gradle\caches\8.11.1\transforms\8f43dbdf2f006a124fb4845549dda2fb\transformed\lifecycle-runtime-release\res
+com.poli.botanicalassistant.app-recyclerview-1.1.0-20 C:\Users\hall3\.gradle\caches\8.11.1\transforms\93d22e39fb05f5faf9f5b65b4dfce761\transformed\recyclerview-1.1.0\res
+com.poli.botanicalassistant.app-lifecycle-viewmodel-ktx-2.8.5-21 C:\Users\hall3\.gradle\caches\8.11.1\transforms\96f2f9493d4dfe069a256289a4f903f0\transformed\lifecycle-viewmodel-ktx-2.8.5\res
+com.poli.botanicalassistant.app-fragment-ktx-1.8.2-22 C:\Users\hall3\.gradle\caches\8.11.1\transforms\9ba33464640ee6b8f7bc89629d975099\transformed\fragment-ktx-1.8.2\res
+com.poli.botanicalassistant.app-appcompat-resources-1.6.1-23 C:\Users\hall3\.gradle\caches\8.11.1\transforms\9c705c70daa7e94ec3618375b6267156\transformed\appcompat-resources-1.6.1\res
+com.poli.botanicalassistant.app-activity-1.8.1-24 C:\Users\hall3\.gradle\caches\8.11.1\transforms\9d90dc5bcc09375bb7f8b28d14f71f29\transformed\activity-1.8.1\res
+com.poli.botanicalassistant.app-navigation-runtime-ktx-2.6.0-25 C:\Users\hall3\.gradle\caches\8.11.1\transforms\a890ca6368c95c3fdda832aca8fe58bf\transformed\navigation-runtime-ktx-2.6.0\res
+com.poli.botanicalassistant.app-circleprogress-1.2.1-26 C:\Users\hall3\.gradle\caches\8.11.1\transforms\aa2a52dcae0e91160fd65591223aea57\transformed\circleprogress-1.2.1\res
+com.poli.botanicalassistant.app-navigation-fragment-ktx-2.6.0-27 C:\Users\hall3\.gradle\caches\8.11.1\transforms\ac4511696e16ecf3df4cf3d448c80b41\transformed\navigation-fragment-ktx-2.6.0\res
+com.poli.botanicalassistant.app-window-1.0.0-28 C:\Users\hall3\.gradle\caches\8.11.1\transforms\b19edb12f7ec9f103f681cb411cec254\transformed\window-1.0.0\res
+com.poli.botanicalassistant.app-transition-1.4.1-29 C:\Users\hall3\.gradle\caches\8.11.1\transforms\b59ce6e231a8e778745758bc806fc8fc\transformed\transition-1.4.1\res
+com.poli.botanicalassistant.app-profileinstaller-1.3.1-30 C:\Users\hall3\.gradle\caches\8.11.1\transforms\be237a3cb3675844802cbf5a7b2c627d\transformed\profileinstaller-1.3.1\res
+com.poli.botanicalassistant.app-lifecycle-livedata-ktx-2.8.5-31 C:\Users\hall3\.gradle\caches\8.11.1\transforms\be94a0c2ddb06e84c9bdd7aec322e8ba\transformed\lifecycle-livedata-ktx-2.8.5\res
+com.poli.botanicalassistant.app-lifecycle-livedata-core-2.8.5-32 C:\Users\hall3\.gradle\caches\8.11.1\transforms\beba434a8086018802a29fbb90ff5672\transformed\lifecycle-livedata-core-2.8.5\res
+com.poli.botanicalassistant.app-navigation-runtime-2.6.0-33 C:\Users\hall3\.gradle\caches\8.11.1\transforms\c37f8fe9dca3d45af6ec7e546fdc86e3\transformed\navigation-runtime-2.6.0\res
+com.poli.botanicalassistant.app-navigation-ui-2.6.0-34 C:\Users\hall3\.gradle\caches\8.11.1\transforms\c3c59fdf3ac13fd80db02fe5b72e7077\transformed\navigation-ui-2.6.0\res
+com.poli.botanicalassistant.app-core-1.13.1-35 C:\Users\hall3\.gradle\caches\8.11.1\transforms\c7d84712084aa26d2ea0fe99dfbf9c1c\transformed\core-1.13.1\res
+com.poli.botanicalassistant.app-lifecycle-viewmodel-savedstate-2.8.5-36 C:\Users\hall3\.gradle\caches\8.11.1\transforms\cbad20ebc2e0cf275a9826678571d883\transformed\lifecycle-viewmodel-savedstate-2.8.5\res
+com.poli.botanicalassistant.app-navigation-ui-ktx-2.6.0-37 C:\Users\hall3\.gradle\caches\8.11.1\transforms\ce9c9513c923610d22e9da4f0ab1f27e\transformed\navigation-ui-ktx-2.6.0\res
+com.poli.botanicalassistant.app-appcompat-1.6.1-38 C:\Users\hall3\.gradle\caches\8.11.1\transforms\cfcaa6ac313e5b480e28373f3707c5b4\transformed\appcompat-1.6.1\res
+com.poli.botanicalassistant.app-drawerlayout-1.1.1-39 C:\Users\hall3\.gradle\caches\8.11.1\transforms\cfd076ffbb8888c17f2a03a45150dcaf\transformed\drawerlayout-1.1.1\res
+com.poli.botanicalassistant.app-core-ktx-1.13.1-40 C:\Users\hall3\.gradle\caches\8.11.1\transforms\d202eee43ed2216b57ea1d13a06a3a0c\transformed\core-ktx-1.13.1\res
+com.poli.botanicalassistant.app-lifecycle-process-2.8.5-41 C:\Users\hall3\.gradle\caches\8.11.1\transforms\d4c580ce162eb2f535b7337043924c34\transformed\lifecycle-process-2.8.5\res
+com.poli.botanicalassistant.app-cardview-1.0.0-42 C:\Users\hall3\.gradle\caches\8.11.1\transforms\deb521eb34077034b1bcf0996792f860\transformed\cardview-1.0.0\res
+com.poli.botanicalassistant.app-navigation-common-ktx-2.6.0-43 C:\Users\hall3\.gradle\caches\8.11.1\transforms\e726ed683d77ee07a10c044a55307888\transformed\navigation-common-ktx-2.6.0\res
+com.poli.botanicalassistant.app-savedstate-1.2.1-44 C:\Users\hall3\.gradle\caches\8.11.1\transforms\e7776be591c45d7b8b836d3e3db760dc\transformed\savedstate-1.2.1\res
+com.poli.botanicalassistant.app-material-1.10.0-45 C:\Users\hall3\.gradle\caches\8.11.1\transforms\e7f20ae7968eceae83e778e490430586\transformed\material-1.10.0\res
+com.poli.botanicalassistant.app-coordinatorlayout-1.1.0-46 C:\Users\hall3\.gradle\caches\8.11.1\transforms\ed219e98bb848cf393c0b84f8a181585\transformed\coordinatorlayout-1.1.0\res
+com.poli.botanicalassistant.app-viewpager2-1.0.0-47 C:\Users\hall3\.gradle\caches\8.11.1\transforms\f1373d6d45b67b45270142b69494d708\transformed\viewpager2-1.0.0\res
+com.poli.botanicalassistant.app-lifecycle-viewmodel-release-48 C:\Users\hall3\.gradle\caches\8.11.1\transforms\f2f825b136189c6f5d2627c81063121c\transformed\lifecycle-viewmodel-release\res
+com.poli.botanicalassistant.app-core-12.0.0-49 C:\Users\hall3\.gradle\caches\8.11.1\transforms\f347b5ec7426fed01ab8ea3066ef420c\transformed\core-12.0.0\res
+com.poli.botanicalassistant.app-savedstate-ktx-1.2.1-50 C:\Users\hall3\.gradle\caches\8.11.1\transforms\f97d79539e32db239ed7a8f58d4fa045\transformed\savedstate-ktx-1.2.1\res
+com.poli.botanicalassistant.app-pngs-51 C:\Users\hall3\Desktop\Proyectos Varios\Desarrollos\Kotlin\AsistenteBotanico\app\build\generated\res\pngs\debug
+com.poli.botanicalassistant.app-res-52 C:\Users\hall3\Desktop\Proyectos Varios\Desarrollos\Kotlin\AsistenteBotanico\app\build\generated\res\processDebugGoogleServices
+com.poli.botanicalassistant.app-resValues-53 C:\Users\hall3\Desktop\Proyectos Varios\Desarrollos\Kotlin\AsistenteBotanico\app\build\generated\res\resValues\debug
+com.poli.botanicalassistant.app-packageDebugResources-54 C:\Users\hall3\Desktop\Proyectos Varios\Desarrollos\Kotlin\AsistenteBotanico\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.poli.botanicalassistant.app-packageDebugResources-55 C:\Users\hall3\Desktop\Proyectos Varios\Desarrollos\Kotlin\AsistenteBotanico\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.poli.botanicalassistant.app-debug-56 C:\Users\hall3\Desktop\Proyectos Varios\Desarrollos\Kotlin\AsistenteBotanico\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.poli.botanicalassistant.app-debug-57 C:\Users\hall3\Desktop\Proyectos Varios\Desarrollos\Kotlin\AsistenteBotanico\app\src\debug\res
+com.poli.botanicalassistant.app-main-58 C:\Users\hall3\Desktop\Proyectos Varios\Desarrollos\Kotlin\AsistenteBotanico\app\src\main\res

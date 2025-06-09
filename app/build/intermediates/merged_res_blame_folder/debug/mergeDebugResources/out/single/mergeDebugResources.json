@@ -1,0 +1,346 @@
+[
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_menu_web.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_menu_web.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_plant_profile_thermostat.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_plant_profile_thermostat.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/menu_activity_main_drawer.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/menu/activity_main_drawer.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable-xxxhdpi_botanical_assistant_img.9.png.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable-xxxhdpi/botanical_assistant_img.9.png"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_menu_slideshow.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_feature_offered_web_navigation.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_feature_offered_web_navigation.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_side_nav_bar.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/side_nav_bar.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_plant_profile_classification_outdoor.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_plant_profile_classification_outdoor.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_menu_garden.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_menu_garden.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_item_about_us_credits.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_about_us_credits.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_plant_profile_growth_speed.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_plant_profile_growth_speed.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-xxhdpi_ic_launcher_assistant.png.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-xxhdpi/ic_launcher_assistant.png"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_item_plant_life_cycle.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_plant_life_cycle.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_item_about_us_what_we_offer.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_about_us_what_we_offer.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_plant_profile_classification_indoor.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_plant_profile_classification_indoor.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/navigation_mobile_navigation.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/navigation/mobile_navigation.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_fragment_web_navigator.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/fragment_web_navigator.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_item_plant_basic_info.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_plant_basic_info.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_garden_placeholder.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_garden_placeholder.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_plant_profile_water.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_plant_profile_water.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_menu_home.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_menu_home.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-hdpi_ic_launcher_assistant.png.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-hdpi/ic_launcher_assistant.png"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/xml_backup_rules.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_fragment_garden.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/fragment_garden.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_fragment_plant_profile.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/fragment_plant_profile.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_favorite_unselected.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_favorite_unselected.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_plant_profile_humidity.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_plant_profile_humidity.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_activity_main.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_menu_about_us.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_menu_about_us.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_fragment_video_player.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/fragment_video_player.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_item_about_us_feature_offered.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_about_us_feature_offered.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_feature_offered_videos.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_feature_offered_videos.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_plant_profile_light.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_plant_profile_light.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable-mdpi_botanical_assistant_img.9.png.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable-mdpi/botanical_assistant_img.9.png"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_play.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_play.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_plant_profile_classification_succulent.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_plant_profile_classification_succulent.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_content_main.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/content_main.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_search.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_item_about_us_header.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_about_us_header.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_raindrop.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_raindrop.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_item_plant_care_info.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_plant_care_info.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_menu_camera.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_menu_camera.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_fragment_videos.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/fragment_videos.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_activity_splash.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-xhdpi_ic_launcher_assistant.png.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-xhdpi/ic_launcher_assistant.png"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_app_bar_main.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/app_bar_main.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_item_video.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_video.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable-hdpi_botanical_assistant_img.9.png.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable-hdpi/botanical_assistant_img.9.png"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-mdpi_ic_launcher_assistant.png.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-mdpi/ic_launcher_assistant.png"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable-xxhdpi_botanical_assistant_img.9.png.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable-xxhdpi/botanical_assistant_img.9.png"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/xml_data_extraction_rules.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_favorite_selected.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_favorite_selected.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_plant_profile_common_name.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_plant_profile_common_name.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_menu_article.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_menu_article.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_plant_profile_science_name.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_plant_profile_science_name.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_menu_gallery.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_menu_gallery.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-xxxhdpi_ic_launcher_assistant.png.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-xxxhdpi/ic_launcher_assistant.png"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_nav_header_main.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/nav_header_main.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_fullscreen.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_fullscreen.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable-xhdpi_botanical_assistant_img.9.png.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable-xhdpi/botanical_assistant_img.9.png"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_fragment_about_us.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/fragment_about_us.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_item_plant.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_plant.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/layout_item_about_us_actions.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_about_us_actions.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_feature_offered_db.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_feature_offered_db.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_plant_profile_seasonality.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_plant_profile_seasonality.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_plant_profile_classification_other.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_plant_profile_classification_other.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-debug-56:/drawable_ic_feature_offered_care_guide.xml.flat",
+        "source": "com.poli.botanicalassistant.app-main-58:/drawable/ic_feature_offered_care_guide.xml"
+    }
+]

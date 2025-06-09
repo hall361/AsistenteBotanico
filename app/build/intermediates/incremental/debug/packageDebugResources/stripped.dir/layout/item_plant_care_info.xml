@@ -1,0 +1,111 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin"
+    android:background="?attr/colorSurface"
+    android:elevation="@dimen/item_elevation"
+    android:padding="@dimen/default_margin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_margin">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <com.github.lzyzsd.circleprogress.DonutProgress
+            android:id="@+id/humidity_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:donut_max="100"
+            app:donut_text_color="@color/humidity_progress_color"
+            app:donut_text_size="@dimen/item_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/light_text" />
+
+        <com.github.lzyzsd.circleprogress.DonutProgress
+            android:id="@+id/temperature_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:donut_finished_color="@color/temperature_progress_color"
+            app:donut_inner_bottom_text_size="14sp"
+            app:donut_max="50"
+            app:donut_text_color="@color/temperature_progress_color"
+            app:donut_text_size="@dimen/item_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/water_amount_text" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/light_text"
+            style="@style/SecondaryText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:gravity="center"
+            android:text="@string/plant_profile_lightning"
+            app:drawableTopCompat="@drawable/ic_plant_profile_light"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/care_info_text" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/water_amount_text"
+            style="@style/SecondaryText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:gravity="center"
+            android:text="@string/plant_profile_water_amount"
+            app:drawableTopCompat="@drawable/ic_plant_profile_water"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/care_info_text" />
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/SecondaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_plant_profile_humidity"
+            android:drawablePadding="@dimen/text_data_padding"
+            android:gravity="center_vertical"
+            android:text="@string/plant_profile_humidity"
+            app:layout_constraintEnd_toEndOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/humidity_progress" />
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/SecondaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_plant_profile_thermostat"
+            android:drawablePadding="@dimen/text_data_padding"
+            android:gravity="center_vertical"
+            android:text="@string/plant_profile_temperature"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/humidity_progress" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/care_info_text"
+            style="@style/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:drawablePadding="@dimen/text_data_padding"
+            android:gravity="center_vertical"
+            android:text="@string/plant_profile_care_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

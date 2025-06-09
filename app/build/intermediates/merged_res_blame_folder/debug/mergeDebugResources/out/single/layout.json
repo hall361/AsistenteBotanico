@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/item_about_us_credits.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_about_us_credits.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/item_about_us_actions.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_about_us_actions.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/item_plant_care_info.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_plant_care_info.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/fragment_plant_profile.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/fragment_plant_profile.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/item_about_us_header.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_about_us_header.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/content_main.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/content_main.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/item_plant_basic_info.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_plant_basic_info.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/fragment_garden.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/fragment_garden.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/item_about_us_what_we_offer.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_about_us_what_we_offer.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/item_video.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_video.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/item_plant.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_plant.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/activity_splash.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/item_plant_life_cycle.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_plant_life_cycle.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/item_about_us_feature_offered.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/item_about_us_feature_offered.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/fragment_videos.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/fragment_videos.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/nav_header_main.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/nav_header_main.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/fragment_web_navigator.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/fragment_web_navigator.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/activity_main.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/app_bar_main.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/app_bar_main.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/fragment_video_player.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/fragment_video_player.xml"
+    },
+    {
+        "merged": "com.poli.botanicalassistant.app-mergeDebugResources-55:/layout/fragment_about_us.xml",
+        "source": "com.poli.botanicalassistant.app-main-58:/layout/fragment_about_us.xml"
+    }
+]

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin"
+    android:background="?attr/colorSurface"
+    android:elevation="@dimen/item_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_margin">
+
+        <ImageView
+            android:id="@+id/plant_image"
+            android:layout_width="@dimen/plant_photo_profile_size"
+            android:layout_height="@dimen/plant_photo_profile_size"
+            android:layout_marginTop="@dimen/default_margin"
+            android:contentDescription="@string/fullscreen_icon_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_garden_placeholder"
+            app:layout_constraintDimensionRatio="H, 16:9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/plant_basic_info_text" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/double_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:orientation="vertical"
+            android:padding="@dimen/default_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/plant_image"
+            app:layout_constraintTop_toBottomOf="@id/plant_basic_info_text">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/common_name_text"
+                style="@style/SecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_plant_profile_common_name"
+                android:drawablePadding="@dimen/text_data_padding"
+                android:gravity="center_vertical" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/scientific_name_text"
+                style="@style/SecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:drawableLeft="@drawable/ic_plant_profile_science_name"
+                android:drawablePadding="@dimen/text_data_padding"
+                android:gravity="center_vertical" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/classification_text"
+                style="@style/SecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:drawableLeft="@drawable/ic_plant_profile_classification_indoor"
+                android:drawablePadding="@dimen/text_data_padding"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/plant_basic_info_text"
+            style="@style/TitleText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/text_data_padding"
+            android:gravity="center"
+            android:text="@string/plant_profile_basic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#F5F5F5</color>
+    <color name="color_on_background">#293829</color>
+    <color name="color_on_surface_variant">#757575</color>
+    <color name="error_color">#B3261E</color>
+    <color name="feature_offered_care_color">#FFB74D</color>
+    <color name="feature_offered_database_color">#388E3C</color>
+    <color name="feature_offered_video_tutorial_color">#1976D2</color>
+    <color name="feature_offered_web_navigation_color">#0288D1</color>
+    <color name="growth_speed_color">#627162</color>
+    <color name="humidity_progress_color">#1E88E5</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="on_background_color">#293829</color>
+    <color name="on_error_color">#FFFFFF</color>
+    <color name="on_primary_color">#FFFFFF</color>
+    <color name="on_primary_container_color">#DDE0DD</color>
+    <color name="on_secondary_color">#FFFFFF</color>
+    <color name="on_surface_color">#000000</color>
+    <color name="plant_classification_indoor_color">#66BB6A</color>
+    <color name="plant_classification_other_color">#FFA726</color>
+    <color name="plant_classification_outdoor_color">#388E3C</color>
+    <color name="plant_classification_succulent_color">#00897B</color>
+    <color name="plant_common_name_color">#66BB6A</color>
+    <color name="plant_scientific_name_color">#42A5F5</color>
+    <color name="primary_color">#293829</color>
+    <color name="primary_container_color">#4A594A</color>
+    <color name="primary_variant_color">#4A594A</color>
+    <color name="seasonality_color">#627162</color>
+    <color name="secondary_color">#627162</color>
+    <color name="secondary_variant_color">#4A594A</color>
+    <color name="splash_raindrop_color">#81D4FA</color>
+    <color name="surface_color">#FFFFFF</color>
+    <color name="temperature_progress_color">#FF8F00</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="button_radius">8dp</dimen>
+    <dimen name="circle_progress_profile_size">100dp</dimen>
+    <dimen name="default_margin">8dp</dimen>
+    <dimen name="double_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="item_elevation">4dp</dimen>
+    <dimen name="item_horizontal_margin">16dp</dimen>
+    <dimen name="item_image_height">60dp</dimen>
+    <dimen name="item_image_width">60dp</dimen>
+    <dimen name="item_small_image_height">24dp</dimen>
+    <dimen name="item_small_image_width">24dp</dimen>
+    <dimen name="item_text_size">12sp</dimen>
+    <dimen name="item_title_size">16sp</dimen>
+    <dimen name="item_vertical_margin">8dp</dimen>
+    <dimen name="logo_height">95dp</dimen>
+    <dimen name="logo_width">95dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="plant_photo_profile_size">100dp</dimen>
+    <dimen name="splash_size">150dp</dimen>
+    <dimen name="text_data_extra_padding">8dp</dimen>
+    <dimen name="text_data_padding">2dp</dimen>
+    <string name="about_app_description">Botanical Assistant helps you identify and take care of your plants with personalized recommendations and an extensive plant database.</string>
+    <string name="about_team">Developed by the Botanical Assistant Team</string>
+    <string name="about_us_welcome_message">Welcome to our app, designed to provide everything you need to know about plants! Here’s what you can explore:</string>
+    <string name="action_load">Load</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">BotanicalAssistant</string>
+    <string name="blog_image_preview">Blog image content description</string>
+    <string name="continue_exploring_description">Keep discovering the fascinating world of plants and enhance your skills with the features Botanical Assistant offers!</string>
+    <string name="continue_exploring_title">Continue Exploring</string>
+    <string name="features_title">Main Features</string>
+    <string name="firebase_database_url" translatable="false">https://botanical-assistant-app-default-rtdb.firebaseio.com</string>
+    <string name="fullscreen_icon_description">Fullscreen</string>
+    <string name="gcm_defaultSenderId" translatable="false">586689381615</string>
+    <string name="go_to_garden">Go to garden!</string>
+    <string name="go_to_videos">Go to videos!</string>
+    <string name="google_api_key" translatable="false">AIzaSyBniUPyhDnlH0CToppiMKahluFSlXUrd3I</string>
+    <string name="google_app_id" translatable="false">1:586689381615:android:2bae5a14b34de78a60471a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBniUPyhDnlH0CToppiMKahluFSlXUrd3I</string>
+    <string name="google_storage_bucket" translatable="false">botanical-assistant-app.appspot.com</string>
+    <string name="lab_input_url">URL</string>
+    <string name="menu_about_us">About us</string>
+    <string name="menu_garden">Garden</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_plant_profile">Plant profile</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_video_player">Video Player</string>
+    <string name="menu_videos">Videos</string>
+    <string name="menu_web">Web</string>
+    <string name="mission_statement">With these features, our mission is to empower you to take better care of your plants and help you grow your gardening knowledge.</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_subtitle">by Botanical assistant team</string>
+    <string name="nav_header_title">Botanical assistant</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="plant_care_guidance_feature">Plant Care Guidance: Discover how to properly nurture and care for your plants with personalized tips on watering, sunlight, and ideal temperatures.</string>
+    <string name="plant_classification">Classification</string>
+    <string name="plant_classification_indoor">Indoor</string>
+    <string name="plant_classification_other">Other</string>
+    <string name="plant_classification_outdoor">Outdoor</string>
+    <string name="plant_classification_succulent">Succulent</string>
+    <string name="plant_database_feature">Extensive Plant Database: Browse through a wide variety of plants, each accompanied by detailed information such as life cycles, care instructions, and categories.</string>
+    <string name="plant_image">Plant image description</string>
+    <string name="plant_profile_basic_info">Basic info</string>
+    <string name="plant_profile_care_info">Care info</string>
+    <string name="plant_profile_growth_speed">Growth speed</string>
+    <string name="plant_profile_humidity">Humidity</string>
+    <string name="plant_profile_life_cycle">Life cycle info</string>
+    <string name="plant_profile_lightning">Lightning</string>
+    <string name="plant_profile_seasonality">Seasonality</string>
+    <string name="plant_profile_temperature">Temperature</string>
+    <string name="plant_profile_water_amount">Water amount</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="project_id" translatable="false">botanical-assistant-app</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="video_icon">Video icon</string>
+    <string name="video_image">Video image description</string>
+    <string name="video_player_error_generic_video">There seems to be an issue playing the video. Please try again.</string>
+    <string name="video_player_error_unexpected">An unexpected error occurred while playing the video. Please try again later.</string>
+    <string name="video_player_error_video_not_found">The video you are trying to watch is not available. Please check the video ID.</string>
+    <string name="video_player_error_video_not_playable">This video cannot be played in the app. Please try a different video.</string>
+    <string name="video_tutorials_feature">Video Tutorials: Access a curated collection of videos offering tutorials, recommendations, and expert advice on planting, care, and more.</string>
+    <string name="web_navigation_feature">Web Navigation: Easily search and explore web pages dedicated to plant-related content, helping you find exactly what you are looking for.</string>
+    <string name="what_we_offer_title">What We Offer</string>
+    <style name="SecondaryText" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="Theme.BotanicalAssistant" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_variant_color</item>
+        <item name="colorOnPrimary">@color/on_primary_color</item>
+        
+        <item name="colorSecondary">@color/secondary_color</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant_color</item>
+        <item name="colorOnSecondary">@color/on_secondary_color</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+
+        
+        <item name="colorControlNormal">@color/primary_color</item>
+        <item name="colorControlActivated">@color/primary_color</item>
+
+        <item name="colorOnBackground">@color/color_on_background</item>
+        <item name="colorOnSurfaceVariant">@color/color_on_surface_variant</item>
+    </style>
+    <style name="Theme.BotanicalAssistant.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.BotanicalAssistant.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.BotanicalAssistant.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="TitleText" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>
